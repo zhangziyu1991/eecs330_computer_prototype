@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Computer prototype for eecs330 project</title>
+	<meta name="viewport" content="width = device-width, initial-scale = 1, maximum-scale = 1">
+	
+	<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+	<script src="jquery mobile/jquery.mobile-1.4.5.min.js"></script>
+	<script src="prototype.js"></script>
+	<link rel=stylesheet href="jquery mobile/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" href="themes/version1.css" />
+  	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+  	<link rel=stylesheet href="prototype.css">
+
+</head>
+
+<body>
+	
+	<div id="home" data-role="page">
+		<a href="#firstPage">blog</a>
+		<div data-role="header">
+		<h1>Home</h1>
+		<!--<a href="#" data-icon="back" data-iconpos="left" class="ui-icon-right">testback</a> -->
+		</div>
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+			<ul>
+				<li>
+					<a href="#firstPage" data-icon="home" data-role="button">Home</a>
+				</li>
+				<li>
+					<a href="#sum" data-icon="grid">Summary</a>
+				</li>
+				<li>
+					<a href="#workout" data-icon="heart">Workout</a>
+				</li>
+				<li>
+					<a href="#firstPage" data-icon="home">Home</a>
+				</li>
+			</ul>
+			</div>
+		</div>
+		
+	</div>
+
+	<div id="sum" data-role="header">
+		<p>test page SUMMARY</p>
+	</div>
+
+	<div id="workout" data-role="page">
+		<p>test page WORKOUT</p>
+	</div>
+
+	<div id="food" data-role="page">
+		<p>test page RESTAURANT</p>
+	</div>
+
+	<div id="settings" data-role="page">
+		<p>test page SETTINGS</p>
+	</div>
+
+</body>
+</html>

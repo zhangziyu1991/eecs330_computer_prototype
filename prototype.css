@@ -1,0 +1,9 @@
+.ui-focus {
+ -moz-box-shadow: none !important;
+ -webkit-box-shadow: none !important;
+ box-shadow: none !important;
+}
+
+.ui-icon-home:focus{
+	background-color: red !important;
+}
