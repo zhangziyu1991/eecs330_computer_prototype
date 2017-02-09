@@ -16,7 +16,14 @@
 	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
 	<link rel="stylesheet" href="icon-pack-custom.css">
 	<link rel=stylesheet href="prototype.css">
-	<!-- <script src="prototype.js"></script> -->
+	<script src="prototype.js"></script> <!--Use js to enable functions on log pages-->
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.2.0/jquery.rateyo.min.js"></script>   <!--Rating Plugin Credit to http://rateyo.fundoocode.ninja/-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.2.0/jquery.rateyo.min.css">
+
+	<script src="time/jquery.timepicker.min.js"></script>      <!--Timepicker Plugin Credit to https://github.com/jonthornton/jquery-timepicker#timepicker-plugin-for-jquery-->
+	<link rel="stylesheet" href="time/jquery.timepicker.css">	
+	
 </head>
 <body>
 
@@ -186,5 +193,82 @@
 		</div>
 	</div>
 </div>
+
+	
+<div id="loginworkout" data-role="page"> <!--JW Responsible for this page-->
+		<div data-role="header" id="custom_header" data-position="fixed">	 
+		    <div class="backimageholder"><a href="#home"><img src="prototype_images/arrow-left-white.png" class="backimage"></a></div><div id="header_logmeal">Log New Workout</div>
+		</div>
+		<form>
+		  	<div class="container">
+		  		<div class="pagetext" id="CurrentTime">Current Time: 12:45 PM</div>
+		  		<br>
+		   		<div class="pagetext">Program</div>
+		   		<input type="text" placeholder="Please Enter Program Name, e.g. Jogging">
+		   		<br>
+				<div class="pagetext">Start Time</div>
+				<input type="text" placeholder="Please Select Start Time" id="starttime">
+				<br>
+				<div class="pagetext">End Time</div>
+				<input type="text" placeholder="Please Select End Time" id="endtime">
+				<br>
+				<div class="pagetext">Duration</div>
+				<p id="duration">Please Select Start Time and End Time</p>
+				<br>
+				<div class="pagetext">Total Calories Consumed:</div>
+				<p id="caloriesconsumed">Please Enter Workout Details</p>
+				<br>
+		    	<div data-role="navbar" id="submit_button_loginitem">
+		    	<a href="#home"><p>Submit!</p></a>
+		    	</div>
+		   	</div>
+		</form>
+</div>	
+
+<div id="loginmeals" data-role="page">  <!--JW Responsible for this page-->
+		<div data-role="header" id="custom_header" data-position="fixed">	 
+		    <div class="backimageholder"><a href="#home"><img src="prototype_images/arrow-left-white.png" class="backimage"></a></div><div id="header_logmeal">Log New Meal</div>
+		</div>
+		<form>
+		  	<div class="container">
+		  		<div class="pagetext" id="CurrentTime">Current Time: 12:45 PM</div>
+		  		<br>
+		   		<div class="pagetext">Restaurant</div>
+		   		<input type="text" placeholder="Please Enter Restaurant Name, e.g. 527 Cafe">
+		   		<br>
+	   			<div class="pagetext">Meal Details and Ratings</div>
+	   			<p>Item #1</p>
+				<input type="text" placeholder="Please Enter Names of the Dishes, e.g. Taiwanese Green Bean with Pork and Rice">
+			    <p>Rating for #1</p>
+			    <div id="rateYo1"></div>
+			    <br>
+				<div id="ItemList1">
+					<p>Item #2</p>
+					<input type="text" placeholder="Please Enter Names of the Dishes, e.g. Potato Salad">
+			    	<p>Rating for #2</p>
+			    	<div id="rateYo2"></div>
+				</div>
+				<br>
+				<div id="ItemList2">
+					<p>Item #3</p>
+					<input type="text" placeholder="Please Enter Names of the Dishes, e.g. Mango Green Tea">
+			    	<p>Rating for #3</p>
+			    	<div id="rateYo3"></div>
+				</div>				              
+                <div class="AddDeleteItem">
+                <p id="AddItem">Add Item</p><p id="DeleteItem">Delete Item</p>
+                </div>
+				<div class="pagetext">Cost</div>
+				<input type="text" placeholder="Please Enter Total Cost of the Meal">  
+				<br>
+		    	<div data-role="navbar" id="submit_button_loginitem">
+		    	<a href="#home"><p>Submit!</p></a>
+		    	</div>
+		   	</div>
+		</form>
+</div>
+	
+	
+	
 </body>
 </html>
