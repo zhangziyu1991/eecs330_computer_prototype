@@ -1,172 +1,156 @@
 <!DOCTYPE html>
-
 <html lang = "en">
-
-<head>
-	
-	<meta charset="utf-8">
-	<title>Computer prototype for eecs330 project</title>
-	<meta name="viewport" content="width = device-width, initial-scale = 1, maximum-scale = 1">
-	
-	<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-	<link rel="stylesheet" href="themes/version1.css" />
-  	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
-  	<link rel="stylesheet" href="icon-pack-custom.css">
-  	<link rel=stylesheet href="prototype.css">
-  	<script src="prototype.js"></script>
-
-</head>
-
-<body>
-	
-	<div id="home" data-role="page">
-		
-		<div data-role="header" id="custom_header" data-position="fixed">
-			<h1>Home</h1>
-		</div>
-		<div data-role="collapsible" id="collapsible_home">
-			<h2>Title1</h2>
-			<p>paragraph</p>
-		</div>
-
-		<div data-role="collapsible" data-collapsed="false">
-			<h2>Title2</h2>
-			<p>paragraph</p>
-		</div>
-		
-		<div data-role="footer" id='custom_footer' data-position="fixed">
-			<div data-role="navbar" id="custom_navbar" data-position="fixed">
-			<ul>
-				<li>
-					<a href="#" data-icon="home" data-transition="none" class="custom_button_home ui-btn-active ui-state-persist"  >Home</a>
-				</li>
-				<li>
-					<a href="#spending" data-icon="usd" data-transition="none" class="custom_button_spending">Spending</a>
-				</li>
-				<li>
-					<a href="#dining" data-icon="cutlery" data-transition="none" class="custom_button_dining">Dining</a>
-				</li>
-				<li>
-					<a href="#workout" data-icon="heart" data-transition="none" class="custom_button_workout">Workout</a>
-				</li>
-				<li>
-					<a href="#settings" data-icon="wrench" data-transition="none" class="custom_button_settings">Settings</a>
-				</li>
-			</ul>
-			</div>
-		</div>
-	</div>
-
-	<div id="spending" data-role="page">
-		<div data-role="header" id="custom_header" data-position="fixed">
-		<h1>Spending</h1>
-		</div>
-		<div data-role="footer" id='custom_footer' data-position="fixed">
-			<div data-role="navbar" id="custom_navbar" data-position="fixed">
-			<ul>
-				<li>
-					<a href="#home" data-icon="home" data-transition="none" class="custom_button_home">Home</a>
-				</li>
-				<li>
-					<a href="#" data-icon="usd" data-transition="none" class="custom_button_spending ui-btn-active ui-state-persist">Spending</a>
-				</li>
-				<li>
-					<a href="#dining" data-icon="cutlery" data-transition="none" class="custom_button_dining">Dining</a>
-				</li>
-				<li>
-					<a href="#workout" data-icon="heart" data-transition="none" class="custom_button_workout">Workout</a>
-				</li>
-				<li>
-					<a href="#settings" data-icon="wrench" data-transition="none" class="custom_button_settings">Settings</a>
-				</li>
-			</ul>
-			</div>
-		</div>
-	</div>
-
-	<div id="dining" data-role="page">
-		<div data-role="header" id="custom_header" data-position="fixed">
-		<h1>Dining</h1>
-		</div>
-		<div data-role="footer" id='custom_footer' data-position="fixed">
-			<div data-role="navbar" id="custom_navbar" data-position="fixed">
-			<ul>
-				<li>
-					<a href="#home" data-icon="home" data-transition="none" class="custom_button_home"  >Home</a>
-				</li>
-				<li>
-					<a href="#spending" data-icon="usd" data-transition="none" class="custom_button_spending">Spending</a>
-				</li>
-				<li>
-					<a href="#" data-icon="cutlery" data-transition="none" class="custom_button_dining ui-btn-active ui-state-persist">Dining</a>
-				</li>
-				<li>
-					<a href="#workout" data-icon="heart" data-transition="none" class="custom_button_workout">Workout</a>
-				</li>
-				<li>
-					<a href="#settings" data-icon="wrench" data-transition="none" class="custom_button_settings">Settings</a>
-				</li>
-			</ul>
-			</div>
-		</div>
-	</div>
-
-	<div id="workout" data-role="page">
-		<div data-role="header" id="custom_header" data-position="fixed">
-		<h1>Workout</h1>
-		</div>
-		<div data-role="footer" id='custom_footer' data-position="fixed">
-			<div data-role="navbar" id="custom_navbar" data-position="fixed">
-			<ul>
-				<li>
-					<a href="#home" data-icon="home" data-transition="none" class="custom_button_home"  >Home</a>
-				</li>
-				<li>
-					<a href="#spending" data-icon="usd" data-transition="none" class="custom_button_spending">Spending</a>
-				</li>
-				<li>
-					<a href="#dining" data-icon="cutlery" data-transition="none" class="custom_button_dining">Dining</a>
-				</li>
-				<li>
-					<a href="#" data-icon="heart" data-transition="none" class="custom_button_workout ui-btn-active ui-state-persist">Workout</a>
-				</li>
-				<li>
-					<a href="#settings" data-icon="wrench" data-transition="none" class="custom_button_settings">Settings</a>
-				</li>
-			</ul>
-			</div>
-		</div>
-	</div>
-
-	
-	<div id="settings" data-role="page">
-		<div data-role="header" id="custom_header" data-position="fixed">
-		<h1>Settings</h1>
-		</div>
-		<div data-role="footer" id='custom_footer' data-position="fixed">
-			<div data-role="navbar" id="custom_navbar" data-position="fixed">
-			<ul>
-				<li>
-					<a href="#home" data-icon="home" data-transition="none" class="custom_button_home"  >Home</a>
-				</li>
-				<li>
-					<a href="#spending" data-icon="usd" data-transition="none" class="custom_button_spending">Spending</a>
-				</li>
-				<li>
-					<a href="#dining" data-icon="cutlery" data-transition="none" class="custom_button_dining">Dining</a>
-				</li>
-				<li>
-					<a href="#workout" data-icon="heart" data-transition="none" class="custom_button_workout">Workout</a>
-				</li>
-				<li>
-					<a href="#" data-icon="wrench" data-transition="none" class="custom_button_settings ui-btn-active ui-state-persist">Settings</a>
-				</li>
-			</ul>
-			</div>
-		</div>	
-	</div>
-
-</body>
+    <head>
+        <meta charset="utf-8">
+        <title>Computer prototype for eecs330 project</title>
+        <meta name="viewport" content="width = device-width, initial-scale = 1, maximum-scale = 1">
+        <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <link rel="stylesheet" href="themes/version1.css" />
+        <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+        <link rel="stylesheet" href="icon-pack-custom.css">
+        <link rel=stylesheet href="prototype.css">
+        <script src="prototype.js"></script>
+    </head>
+    <body>
+        <div id="home" data-role="page">
+            <div data-role="header" id="custom_header" data-position="fixed">
+                <h1>Home</h1>
+            </div>
+            <div data-role="collapsible" id="collapsible_home">
+                <h2>Title1</h2>
+                <p>paragraph</p>
+            </div>
+            <div data-role="collapsible" data-collapsed="false">
+                <h2>Title2</h2>
+                <p>paragraph</p>
+            </div>
+            <div data-role="footer" id='custom_footer' data-position="fixed">
+                <div data-role="navbar" id="custom_navbar" data-position="fixed">
+                    <ul>
+                        <li>
+                            <a href="#" data-icon="home" data-transition="none" class="custom_button_home ui-btn-active ui-state-persist"  >Home</a>
+                        </li>
+                        <li>
+                            <a href="#spending" data-icon="usd" data-transition="none" class="custom_button_spending">Spending</a>
+                        </li>
+                        <li>
+                            <a href="#dining" data-icon="cutlery" data-transition="none" class="custom_button_dining">Dining</a>
+                        </li>
+                        <li>
+                            <a href="#workout" data-icon="heart" data-transition="none" class="custom_button_workout">Workout</a>
+                        </li>
+                        <li>
+                            <a href="#settings" data-icon="wrench" data-transition="none" class="custom_button_settings">Settings</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="spending" data-role="page">
+            <div data-role="header" id="custom_header" data-position="fixed">
+                <h1>Spending</h1>
+            </div>
+            <div data-role="footer" id='custom_footer' data-position="fixed">
+                <div data-role="navbar" id="custom_navbar" data-position="fixed">
+                    <ul>
+                        <li>
+                            <a href="#home" data-icon="home" data-transition="none" class="custom_button_home">Home</a>
+                        </li>
+                        <li>
+                            <a href="#" data-icon="usd" data-transition="none" class="custom_button_spending ui-btn-active ui-state-persist">Spending</a>
+                        </li>
+                        <li>
+                            <a href="#dining" data-icon="cutlery" data-transition="none" class="custom_button_dining">Dining</a>
+                        </li>
+                        <li>
+                            <a href="#workout" data-icon="heart" data-transition="none" class="custom_button_workout">Workout</a>
+                        </li>
+                        <li>
+                            <a href="#settings" data-icon="wrench" data-transition="none" class="custom_button_settings">Settings</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="dining" data-role="page">
+            <div data-role="header" id="custom_header" data-position="fixed">
+                <h1>Dining</h1>
+            </div>
+            <div data-role="footer" id='custom_footer' data-position="fixed">
+                <div data-role="navbar" id="custom_navbar" data-position="fixed">
+                    <ul>
+                        <li>
+                            <a href="#home" data-icon="home" data-transition="none" class="custom_button_home"  >Home</a>
+                        </li>
+                        <li>
+                            <a href="#spending" data-icon="usd" data-transition="none" class="custom_button_spending">Spending</a>
+                        </li>
+                        <li>
+                            <a href="#" data-icon="cutlery" data-transition="none" class="custom_button_dining ui-btn-active ui-state-persist">Dining</a>
+                        </li>
+                        <li>
+                            <a href="#workout" data-icon="heart" data-transition="none" class="custom_button_workout">Workout</a>
+                        </li>
+                        <li>
+                            <a href="#settings" data-icon="wrench" data-transition="none" class="custom_button_settings">Settings</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="workout" data-role="page">
+            <div data-role="header" id="custom_header" data-position="fixed">
+                <h1>Workout</h1>
+            </div>
+            <div data-role="footer" id='custom_footer' data-position="fixed">
+                <div data-role="navbar" id="custom_navbar" data-position="fixed">
+                    <ul>
+                        <li>
+                            <a href="#home" data-icon="home" data-transition="none" class="custom_button_home"  >Home</a>
+                        </li>
+                        <li>
+                            <a href="#spending" data-icon="usd" data-transition="none" class="custom_button_spending">Spending</a>
+                        </li>
+                        <li>
+                            <a href="#dining" data-icon="cutlery" data-transition="none" class="custom_button_dining">Dining</a>
+                        </li>
+                        <li>
+                            <a href="#" data-icon="heart" data-transition="none" class="custom_button_workout ui-btn-active ui-state-persist">Workout</a>
+                        </li>
+                        <li>
+                            <a href="#settings" data-icon="wrench" data-transition="none" class="custom_button_settings">Settings</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="settings" data-role="page">
+            <div data-role="header" id="custom_header" data-position="fixed">
+                <h1>Settings</h1>
+            </div>
+            <div data-role="footer" id='custom_footer' data-position="fixed">
+                <div data-role="navbar" id="custom_navbar" data-position="fixed">
+                    <ul>
+                        <li>
+                            <a href="#home" data-icon="home" data-transition="none" class="custom_button_home"  >Home</a>
+                        </li>
+                        <li>
+                            <a href="#spending" data-icon="usd" data-transition="none" class="custom_button_spending">Spending</a>
+                        </li>
+                        <li>
+                            <a href="#dining" data-icon="cutlery" data-transition="none" class="custom_button_dining">Dining</a>
+                        </li>
+                        <li>
+                            <a href="#workout" data-icon="heart" data-transition="none" class="custom_button_workout">Workout</a>
+                        </li>
+                        <li>
+                            <a href="#" data-icon="wrench" data-transition="none" class="custom_button_settings ui-btn-active ui-state-persist">Settings</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
