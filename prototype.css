@@ -58,11 +58,18 @@
 	color:red;
 }
 
+/*Ziyu*/
+
 .ui-popup-container
 {
     width: 80%;
     height: 20%;
 }
+
+/*.ui-icon-delete::after {
+    width: 1rem !important;
+    height: 1rem !important;
+}*/
 
 /*SJW Code*/
 
