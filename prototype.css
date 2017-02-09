@@ -1,9 +1,59 @@
-.ui-focus {
- -moz-box-shadow: none !important;
- -webkit-box-shadow: none !important;
- box-shadow: none !important;
+.ui-page-theme-a{  /* remove shadow when button is clicked, change font color to white when button is clicked */
+	-webkit-box-shadow: 0px;
+	-moz-box-shadow: 0px;
+	box-shadow: 0px;
 }
 
-.ui-icon-home:focus{
-	background-color: red !important;
+#custom_header{   /* customize header */
+	background-color: red;
+	color:white;
+	font-weight: bold;
+	height: 3em;
+	font-size: 2em;
+}
+
+#custom_navbar .ui-btn{ /* customize the navigation bar */
+	height: 1em; 
+	font-size: 1em;
+}
+
+#custom_footer{ /* customzie the footer */
+	background-color: white;
+}
+
+.ui-link.ui-btn{ /* adjust position of button texts */
+	padding-top: 3.5em;
+}
+
+.ui-btn:after { /* scaling the icons in the buttons and adjust the position of the icons*/
+    background-repeat: no-repeat;
+    background-position: center;
+    ms-transform: scale(2.2); /* IE 9 */
+    -webkit-transform: scale(2.2); /* Chrome, Safari, Opera */
+    transform: scale(2.2);
+    top:1.2em;
+}
+
+.ui-btn-active:after{
+	background-color: red;
+}
+
+.ui-icon-usd:after{ /* adjust the position of the image in the spending icon */
+	background-position: 0.4em, 0.3em;
+}
+
+.ui-icon-cutlery:after{ /* adjust the position of the image in the dining icon */
+	background-position: 0.25em, 0.3em;
+}
+
+#collapsible_home{
+
+}
+
+.ui-collapsible-content.ui-body-inherit{
+	color:red;
+}
+
+#collapsible_home h2 a{
+	color:red;
 }
