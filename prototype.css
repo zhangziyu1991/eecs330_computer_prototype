@@ -63,3 +63,71 @@
     width: 80%;
     height: 20%;
 }
+
+/*SJW Code*/
+
+img.backimage {
+    width: 30%;
+}
+
+.backimageholder{
+	text-align: left;
+	padding-left: 0.5em;
+	padding-top: 1em;
+	float:left;
+}
+
+#header_logmeal{   /* customize header */
+	float: left;
+    position: absolute;
+    left: 0;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+}
+
+.pagetext {
+	font-size: 1.5em;
+	font-weight: bold;
+	color: black;
+}
+
+.AddDeleteItem {
+	font-size: 1.0em;
+	color: black;
+	text-align: left;
+	text-decoration: underline;
+	width: 7%;
+}
+
+#DeleteItem{
+	display:none;
+}
+
+#ItemList1, #ItemList2 {
+	display: none;
+}
+
+#submit_button_loginitem a {
+	height: 0.1em;
+	font-size:1.2em;
+	border-radius: 0.8em;
+}
+#submit_button_loginitem a p{
+	position:relative;
+	top:-3em;
+}
+
+#example {
+	display: none;
+}
+
+#duration{
+	font-weight: bold;
+}
+
+#caloriesconsumed{
+	font-weight: bold;
+}
+
+/*End of SJW Code*/
