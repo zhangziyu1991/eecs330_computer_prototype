@@ -34,153 +34,158 @@
 			<p>paragraph</p>
 		</div>
 
-			<div data-role="main" class="ui-content">
-		<a href="#myPopupDialog" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">+</a>
+		<div data-role="main" class="ui-content">
+			<a href="#select" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">+</a>
 
-		<div data-role="popup" id="myPopupDialog">
-			<div data-role="header">
-				<h1>Select</h1>
+			<div data-role="popup" id="select">
+				<div data-role="header">
+<!--     				<a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-back ui-btn-icon-left" data-rel="back">Go Back</a> -->
+					<h1>Select</h1>
+				</div>
+				<div data-role="main" class="ui-content" data-position="fixed">
+					<div data-role="controlgroup" data-type="vertical" align="center">
+				      	<a href="#" class="ui-btn">Meal</a>
+				      	<a href="#" class="ui-btn">Workout</a>
+				    </div>
+		<!-- 			<div data-role="navbar" id="custom_navbar" data-position="fixed">
+						<ul>
+							<li>
+								<a href="#" data-icon="cutlery" data-transition="none" ui-btn-active>Meal</a>
+							</li>
+							<li>
+								<a href="#" data-icon="heart" data-transition="none" ui-btn-active>Workout</a>
+							</li>
+						</ul>
+					</div> -->
+				</div>
 			</div>
+		</div>
 
-			<div data-role="main" class="ui-content">
-				<!-- <h2>Select Item</h2> -->
-				<!-- <p>jQuery Mobile is FUN!</p> -->
-				<a href="#" data-icon="home" data-transition="none" class="custom_button_home ui-btn-active ui-state-persist">Home</a>
-				<a href="#spending" data-icon="usd" data-transition="none" class="custom_button_spending">Spending</a>
-				<!-- <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-back ui-btn-icon-left" data-rel="back">Go Back</a> -->
-			</div>
-<!-- 
-			<div data-role="footer">
-				<h1>Footer Text</h1>
-			</div> -->
+	<div data-role="footer" id='custom_footer' data-position="fixed">
+		<div data-role="navbar" id="custom_navbar" data-position="fixed">
+			<ul>
+				<li>
+					<a href="#" data-icon="home" data-transition="none" class="custom_button_home ui-btn-active ui-state-persist">Home</a>
+				</li>
+				<li>
+					<a href="#spending" data-icon="usd" data-transition="none" class="custom_button_spending">Spending</a>
+				</li>
+				<li>
+					<a href="#dining" data-icon="cutlery" data-transition="none" class="custom_button_dining">Dining</a>
+				</li>
+				<li>
+					<a href="#workout" data-icon="heart" data-transition="none" class="custom_button_workout">Workout</a>
+				</li>
+				<li>
+					<a href="#settings" data-icon="wrench" data-transition="none" class="custom_button_settings">Settings</a>
+				</li>
+			</ul>
 		</div>
 	</div>
-
-		<div data-role="footer" id='custom_footer' data-position="fixed">
-			<div data-role="navbar" id="custom_navbar" data-position="fixed">
-				<ul>
-					<li>
-						<a href="#" data-icon="home" data-transition="none" class="custom_button_home ui-btn-active ui-state-persist">Home</a>
-					</li>
-					<li>
-						<a href="#spending" data-icon="usd" data-transition="none" class="custom_button_spending">Spending</a>
-					</li>
-					<li>
-						<a href="#dining" data-icon="cutlery" data-transition="none" class="custom_button_dining">Dining</a>
-					</li>
-					<li>
-						<a href="#workout" data-icon="heart" data-transition="none" class="custom_button_workout">Workout</a>
-					</li>
-					<li>
-						<a href="#settings" data-icon="wrench" data-transition="none" class="custom_button_settings">Settings</a>
-					</li>
-				</ul>
-			</div>
+</div>
+<div id="spending" data-role="page">
+	<div data-role="header" id="custom_header" data-position="fixed">
+		<h1>Spending</h1>
+	</div>
+	<div data-role="footer" id='custom_footer' data-position="fixed">
+		<div data-role="navbar" id="custom_navbar" data-position="fixed">
+			<ul>
+				<li>
+					<a href="#home" data-icon="home" data-transition="none" class="custom_button_home">Home</a>
+				</li>
+				<li>
+					<a href="#" data-icon="usd" data-transition="none" class="custom_button_spending ui-btn-active ui-state-persist">Spending</a>
+				</li>
+				<li>
+					<a href="#dining" data-icon="cutlery" data-transition="none" class="custom_button_dining">Dining</a>
+				</li>
+				<li>
+					<a href="#workout" data-icon="heart" data-transition="none" class="custom_button_workout">Workout</a>
+				</li>
+				<li>
+					<a href="#settings" data-icon="wrench" data-transition="none" class="custom_button_settings">Settings</a>
+				</li>
+			</ul>
 		</div>
 	</div>
-	<div id="spending" data-role="page">
-		<div data-role="header" id="custom_header" data-position="fixed">
-			<h1>Spending</h1>
-		</div>
-		<div data-role="footer" id='custom_footer' data-position="fixed">
-			<div data-role="navbar" id="custom_navbar" data-position="fixed">
-				<ul>
-					<li>
-						<a href="#home" data-icon="home" data-transition="none" class="custom_button_home">Home</a>
-					</li>
-					<li>
-						<a href="#" data-icon="usd" data-transition="none" class="custom_button_spending ui-btn-active ui-state-persist">Spending</a>
-					</li>
-					<li>
-						<a href="#dining" data-icon="cutlery" data-transition="none" class="custom_button_dining">Dining</a>
-					</li>
-					<li>
-						<a href="#workout" data-icon="heart" data-transition="none" class="custom_button_workout">Workout</a>
-					</li>
-					<li>
-						<a href="#settings" data-icon="wrench" data-transition="none" class="custom_button_settings">Settings</a>
-					</li>
-				</ul>
-			</div>
+</div>
+<div id="dining" data-role="page">
+	<div data-role="header" id="custom_header" data-position="fixed">
+		<h1>Dining</h1>
+	</div>
+	<div data-role="footer" id='custom_footer' data-position="fixed">
+		<div data-role="navbar" id="custom_navbar" data-position="fixed">
+			<ul>
+				<li>
+					<a href="#home" data-icon="home" data-transition="none" class="custom_button_home"  >Home</a>
+				</li>
+				<li>
+					<a href="#spending" data-icon="usd" data-transition="none" class="custom_button_spending">Spending</a>
+				</li>
+				<li>
+					<a href="#" data-icon="cutlery" data-transition="none" class="custom_button_dining ui-btn-active ui-state-persist">Dining</a>
+				</li>
+				<li>
+					<a href="#workout" data-icon="heart" data-transition="none" class="custom_button_workout">Workout</a>
+				</li>
+				<li>
+					<a href="#settings" data-icon="wrench" data-transition="none" class="custom_button_settings">Settings</a>
+				</li>
+			</ul>
 		</div>
 	</div>
-	<div id="dining" data-role="page">
-		<div data-role="header" id="custom_header" data-position="fixed">
-			<h1>Dining</h1>
-		</div>
-		<div data-role="footer" id='custom_footer' data-position="fixed">
-			<div data-role="navbar" id="custom_navbar" data-position="fixed">
-				<ul>
-					<li>
-						<a href="#home" data-icon="home" data-transition="none" class="custom_button_home"  >Home</a>
-					</li>
-					<li>
-						<a href="#spending" data-icon="usd" data-transition="none" class="custom_button_spending">Spending</a>
-					</li>
-					<li>
-						<a href="#" data-icon="cutlery" data-transition="none" class="custom_button_dining ui-btn-active ui-state-persist">Dining</a>
-					</li>
-					<li>
-						<a href="#workout" data-icon="heart" data-transition="none" class="custom_button_workout">Workout</a>
-					</li>
-					<li>
-						<a href="#settings" data-icon="wrench" data-transition="none" class="custom_button_settings">Settings</a>
-					</li>
-				</ul>
-			</div>
+</div>
+<div id="workout" data-role="page">
+	<div data-role="header" id="custom_header" data-position="fixed">
+		<h1>Workout</h1>
+	</div>
+	<div data-role="footer" id='custom_footer' data-position="fixed">
+		<div data-role="navbar" id="custom_navbar" data-position="fixed">
+			<ul>
+				<li>
+					<a href="#home" data-icon="home" data-transition="none" class="custom_button_home"  >Home</a>
+				</li>
+				<li>
+					<a href="#spending" data-icon="usd" data-transition="none" class="custom_button_spending">Spending</a>
+				</li>
+				<li>
+					<a href="#dining" data-icon="cutlery" data-transition="none" class="custom_button_dining">Dining</a>
+				</li>
+				<li>
+					<a href="#" data-icon="heart" data-transition="none" class="custom_button_workout ui-btn-active ui-state-persist">Workout</a>
+				</li>
+				<li>
+					<a href="#settings" data-icon="wrench" data-transition="none" class="custom_button_settings">Settings</a>
+				</li>
+			</ul>
 		</div>
 	</div>
-	<div id="workout" data-role="page">
-		<div data-role="header" id="custom_header" data-position="fixed">
-			<h1>Workout</h1>
-		</div>
-		<div data-role="footer" id='custom_footer' data-position="fixed">
-			<div data-role="navbar" id="custom_navbar" data-position="fixed">
-				<ul>
-					<li>
-						<a href="#home" data-icon="home" data-transition="none" class="custom_button_home"  >Home</a>
-					</li>
-					<li>
-						<a href="#spending" data-icon="usd" data-transition="none" class="custom_button_spending">Spending</a>
-					</li>
-					<li>
-						<a href="#dining" data-icon="cutlery" data-transition="none" class="custom_button_dining">Dining</a>
-					</li>
-					<li>
-						<a href="#" data-icon="heart" data-transition="none" class="custom_button_workout ui-btn-active ui-state-persist">Workout</a>
-					</li>
-					<li>
-						<a href="#settings" data-icon="wrench" data-transition="none" class="custom_button_settings">Settings</a>
-					</li>
-				</ul>
-			</div>
+</div>
+<div id="settings" data-role="page">
+	<div data-role="header" id="custom_header" data-position="fixed">
+		<h1>Settings</h1>
+	</div>
+	<div data-role="footer" id='custom_footer' data-position="fixed">
+		<div data-role="navbar" id="custom_navbar" data-position="fixed">
+			<ul>
+				<li>
+					<a href="#home" data-icon="home" data-transition="none" class="custom_button_home"  >Home</a>
+				</li>
+				<li>
+					<a href="#spending" data-icon="usd" data-transition="none" class="custom_button_spending">Spending</a>
+				</li>
+				<li>
+					<a href="#dining" data-icon="cutlery" data-transition="none" class="custom_button_dining">Dining</a>
+				</li>
+				<li>
+					<a href="#workout" data-icon="heart" data-transition="none" class="custom_button_workout">Workout</a>
+				</li>
+				<li>
+					<a href="#" data-icon="wrench" data-transition="none" class="custom_button_settings ui-btn-active ui-state-persist">Settings</a>
+				</li>
+			</ul>
 		</div>
 	</div>
-	<div id="settings" data-role="page">
-		<div data-role="header" id="custom_header" data-position="fixed">
-			<h1>Settings</h1>
-		</div>
-		<div data-role="footer" id='custom_footer' data-position="fixed">
-			<div data-role="navbar" id="custom_navbar" data-position="fixed">
-				<ul>
-					<li>
-						<a href="#home" data-icon="home" data-transition="none" class="custom_button_home"  >Home</a>
-					</li>
-					<li>
-						<a href="#spending" data-icon="usd" data-transition="none" class="custom_button_spending">Spending</a>
-					</li>
-					<li>
-						<a href="#dining" data-icon="cutlery" data-transition="none" class="custom_button_dining">Dining</a>
-					</li>
-					<li>
-						<a href="#workout" data-icon="heart" data-transition="none" class="custom_button_workout">Workout</a>
-					</li>
-					<li>
-						<a href="#" data-icon="wrench" data-transition="none" class="custom_button_settings ui-btn-active ui-state-persist">Settings</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</div>
+</div>
 </body>
 </html>

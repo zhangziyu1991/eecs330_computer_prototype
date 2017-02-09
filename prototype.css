@@ -57,3 +57,9 @@
 #collapsible_home h2 a{
 	color:red;
 }
+
+.ui-popup-container
+{
+    width: 80%;
+    height: 20%;
+}
