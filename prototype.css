@@ -239,3 +239,7 @@ div.ui-checkbox{ /* style the checkbox on main login page */
     -webkit-transform: scale(4.5); /* Chrome, Safari, Opera */
     transform: scale(4.5);
 }
+
+#newentry {
+	background-color: rgb(180,180,180);
+}
