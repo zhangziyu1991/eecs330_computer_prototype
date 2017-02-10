@@ -27,7 +27,134 @@
 </head>
 <body>
 
+	<!-- login page -->
+	<div id="login" data-role="page">
+		<div data-role="header" id="custom_header" data-position="fixed">
+			<h1>Welcome!</h1>
+		</div>
+		<form>
+			<div class="imgcontainer">
+		    	<img src="prototype_images/avatar.png" alt="Avatar" class="avatar">
+		  	</div>
 
+		    <div class="container">
+		   		<label class="pagetext"><b>Username</b></label>
+		   		<input type="text" placeholder="Enter Username" name="uname">
+
+		    	<label class="pagetext"><b>Password</b></label>
+		    	<input type="password" placeholder="Enter Password" name="psw">
+			    
+		    	<input type="checkbox" checked="checked" class="login_checkbox"> 
+		    	<p id="checkbox_text">Remember me</p> 
+		    	<div data-role="navbar" id="login_submit">
+		    		<a href="#home" data-transition="none"><p>Login</p></a>
+		    		<a href="#reset_password" data-transition="none"><p>Forgot Password?</p></a>
+		    		<a href="#register" data-transition="none"><p>Register</p></a>
+		    	</div>
+			    
+			</div>
+		</form>
+	</div>
+
+	
+	<!-- register page -->
+	<div id="register" data-role="page">
+		<div data-role="header" id="custom_header" data-position="fixed">
+			<h1>Register</h1>
+		</div>
+
+		<form>
+
+			<div class="container">
+			    <label class="pagetext"><b>Username</b></label>
+			    <input type="text" placeholder="Enter Username" name="uname">
+
+			    <label class="pagetext"><b>Password</b></label>
+			    <input type="password" placeholder="Enter Password" name="psw">
+
+			    <label class="pagetext"><b>Confirm Password</b></label>
+			    <input type="password" placeholder="Please Confirm Password" name="psw">
+
+			    <label class="pagetext"><b>Email</b></label>
+			    <input type="text" placeholder="Enter Email Address" name="email">
+
+			    <label class="pagetext"><b>Mobile Phone Number (XXX)XXX-XXXX</b></label>
+			    <input type="text" placeholder="Enter Mobile Phone Number" name="email">
+			    
+			    <div data-role="navbar" id="register_submit">
+			    	<a href="#register_confirm" data-rel="popup" data-position-to="window"><p>Register</p></a>
+			    </div>
+
+	   			<div data-role="popup" id="register_confirm">
+	    			<div data-role="header">
+	      			   <h1>Success!</h1>
+	     			</div>
+
+	     			<div data-role="main" class="ui-content">
+	       				<h2>You have become our new member!</h2>
+	        	    	<div data-role="navbar" id="back_to_login">
+			    			<a href="#login" data-transition="none"><p>Back to Login</p></a>
+			   		    </div>
+	      			</div>
+	      		</div>
+	      	</div>
+		</form>
+	</div>
+
+
+	<!-- reset password page -->
+	<div id="reset_password" data-role="page">
+		<div data-role="header" id="custom_header" data-position="fixed">
+			<h1>Reset Password</h1>
+		</div>
+		<form>
+		    <div class="container">
+		   		<label class="pagetext"><b>Password</b></label>
+		   		<input type="password" placeholder="Enter New Password" name="psw">
+
+		    	<label class="pagetext"><b>Password</b></label>
+		    	<input type="password" placeholder="Please Confirm New Password" name="psw">
+
+		    	<div data-role="navbar" id="reset_password_submit">
+		    		<a href="#reset_password_confirm" data-rel="popup" data-position-to="window"><p>Reset</p></a>
+		    	</div>
+		    	
+		    	<div data-role="popup" id="reset_password_confirm">
+	    			<div data-role="header">
+	      			   <h1>Success!</h1>
+	     			</div>
+					
+					<div data-role="main" class="ui-content">
+	       				<h2>Your Password is Successfully Reset!</h2>
+	        	   	 	<div data-role="navbar" id="back_to_login">
+			    			<a href="#login" data-transition="none"><p>Back to Login</p></a>
+			   			</div>
+	      			</div>
+	      		</div>
+			</div>
+		</form>
+	</div>
+
+	<!-- select popup, now made global -->
+	<div id="select" data-theme="a">
+			<div data-role="header">
+				<h1>Health</h1>
+			</div>
+					
+			<div data-role="navbar" id="custom_navbar" data-position="fixed">
+			<ul>
+				<li>
+					<a href="#loginmeals" data-icon="cutlery" data-transition="none">Meal</a>
+				</li>
+				<li>
+					<a href="#loginworkout" data-icon="dribble" data-transition="none">Workout</a>
+				</li>
+			</ul>
+			</div>
+	</div>
+
+
+	<!-- home page -->
 	<div id="home" data-role="page">
 		<div data-role="header" id="custom_header" data-position="fixed">
 			<h1>Home</h1>
@@ -40,237 +167,221 @@
 			<h2>Title2</h2>
 			<p>paragraph</p>
 		</div>
-		<div data-role="main" class="ui-content">
-			
-			<div data-role="popup" id="select">
-				<a href="#" data-rel="back" class="ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-right"></a>
-				<div data-role="header">
-					<h1>Select</h1>
-				</div>
-				<!-- <div data-role="main" class="ui-content" data-position="fixed">
-					<div data-role="controlgroup" data-type="vertical" align="center">
-				      	<a href="#loginmeals" data-icon="cutlery" class="ui-btn">Meal</a>
-				      	<a href="#loginworkout" class="ui-btn">Workout</a>
-				    </div>
-				</div> -->
-				<div data-role="navbar" id="custom_navbar" data-position="fixed">
+		
+		<div data-role="footer" id='custom_footer' data-position="fixed">
+
+			<div data-role="navbar" id="custom_navbar" data-position="fixed">
 				<ul>
 					<li>
-						<a href="#loginmeals" data-icon="cutlery" data-transition="none" ui-btn-active>Meal</a>
+						<a href="#" data-icon="home" data-transition="none" class="custom_button_home ui-btn-active ui-state-persist">Home</a>
 					</li>
 					<li>
-						<a href="#loginworkout" data-icon="heart" data-transition="none" ui-btn-active>Workout</a>
+						<a href="#spending" data-icon="usd" data-transition="none" class="custom_button_spending">Spending</a>
+					</li>
+					<li>
+						<a href="#select" data-rel="popup" data-position-to="window" data-transition="none" data-icon="heart" class="custom_button_health">Health</a>
+					</li>
+					<li>
+						<a href="#dinning" data-icon="coffee" data-transition="none" class="custom_button_dinning">Dinning</a>
+					</li>
+					<li>
+						<a href="#settings" data-icon="wrench" data-transition="none" class="custom_button_settings">Settings</a>
 					</li>
 				</ul>
 			</div>
+		</div>
+	</div>
+
+	<!-- spending page -->
+	<div id="spending" data-role="page">
+		<div data-role="header" id="custom_header" data-position="fixed">
+			<h1>Spending</h1>
+		</div>
+		<div data-role="footer" id='custom_footer' data-position="fixed">
+			<div data-role="navbar" id="custom_navbar" data-position="fixed">
+				<ul>
+					<li>
+						<a href="#home" data-icon="home" data-transition="none" class="custom_button_home">Home</a>
+					</li>
+					<li>
+						<a href="#" data-icon="usd" data-transition="none" class="custom_button_spending ui-btn-active ui-state-persist">Spending</a>
+					</li>
+					<li>
+						<a href="#select" data-rel="popup" data-position-to="window" data-transition="none" data-icon="heart" class="custom_button_health">Health</a>
+					</li>
+					<li>
+						<a href="#dinning" data-icon="coffee" data-transition="none" class="custom_button_dinning">Dinning</a>
+					</li>
+					<li>
+						<a href="#settings" data-icon="wrench" data-transition="none" class="custom_button_settings">Settings</a>
+					</li>
+				</ul>
 			</div>
+		</div>
+	</div>
 
+	<!-- health page -->
+	<div id="health" data-role="page">
+		<div data-role="header" id="custom_header" data-position="fixed">
+			<h1>Health</h1>
 		</div>
+		<div data-role="footer" id='custom_footer' data-position="fixed">
+			<div data-role="navbar" id="custom_navbar" data-position="fixed">
+				<ul>
+					<li>
+						<a href="#home" data-icon="home" data-transition="none" class="custom_button_home"  >Home</a>
+					</li>
+					<li>
+						<a href="#spending" data-icon="usd" data-transition="none" class="custom_button_spending">Spending</a>
+					</li>
+					<li>
+						<a href="#select" data-rel="popup" data-position-to="window" data-transition="none" data-icon="heart" class="custom_button_health ui-btn-active ui-state-persist">Health</a>
+					</li>
+					<li>
+						<a href="#dinning" data-icon="coffee" data-transition="none" class="custom_button_dinning">Dinning</a>
+					</li>
+					<li>
+						<a href="#settings" data-icon="wrench" data-transition="none" class="custom_button_settings">Settings</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
 
-	<div data-role="footer" id='custom_footer' data-position="fixed">
-		<a href="#select" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">+</a>
+	<!-- dinning page -->
+	<div id="dinning" data-role="page">
+		<div data-role="header" id="custom_header" data-position="fixed">
+			<h1>Dinning</h1>
+		</div>
+		<div data-role="footer" id='custom_footer' data-position="fixed">
+			<div data-role="navbar" id="custom_navbar" data-position="fixed">
+				<ul>
+					<li>
+						<a href="#home" data-icon="home" data-transition="none" class="custom_button_home"  >Home</a>
+					</li>
+					<li>
+						<a href="#spending" data-icon="usd" data-transition="none" class="custom_button_spending">Spending</a>
+					</li>
+					<li>
+						<a href="#select" data-rel="popup" data-position-to="window" data-transition="none" data-icon="heart" class="custom_button_health">Health</a>
+					</li>
+					<li>
+						<a href="#" data-icon="coffee" data-transition="none" class="custom_button_dinning ui-btn-active ui-state-persist">Dinning</a>
+					</li>
+					<li>
+						<a href="#settings" data-icon="wrench" data-transition="none" class="custom_button_settings">Settings</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
 
-		<div data-role="navbar" id="custom_navbar" data-position="fixed">
-			<ul>
-				<li>
-					<a href="#" data-icon="home" data-transition="none" class="custom_button_home ui-btn-active ui-state-persist">Home</a>
-				</li>
-				<li>
-					<a href="#spending" data-icon="usd" data-transition="none" class="custom_button_spending">Spending</a>
-				</li>
-				<li>
-					<a href="#dining" data-icon="cutlery" data-transition="none" class="custom_button_dining">Dining</a>
-				</li>
-				<li>
-					<a href="#workout" data-icon="heart" data-transition="none" class="custom_button_workout">Workout</a>
-				</li>
-				<li>
-					<a href="#settings" data-icon="wrench" data-transition="none" class="custom_button_settings">Settings</a>
-				</li>
-			</ul>
+	<!-- settings page -->
+	<div id="settings" data-role="page">
+		<div data-role="header" id="custom_header" data-position="fixed">
+			<h1>Settings</h1>
+		</div>
+		<a href="#login">back to login (for testing)</a>
+		<div data-role="footer" id='custom_footer' data-position="fixed">
+			<div data-role="navbar" id="custom_navbar" data-position="fixed">
+				<ul>
+					<li>
+						<a href="#home" data-icon="home" data-transition="none" class="custom_button_home"  >Home</a>
+					</li>
+					<li>
+						<a href="#spending" data-icon="usd" data-transition="none" class="custom_button_spending">Spending</a>
+					</li>
+					<li>
+						<a href="#select" data-rel="popup" data-position-to="window" data-transition="none" data-icon="heart" class="custom_button_health">Health</a>
+					</li>
+					<li>
+						<a href="#dinning" data-icon="coffee" data-transition="none" class="custom_button_dinning">Dinning</a>
+					</li>
+					<li>
+						<a href="#" data-icon="wrench" data-transition="none" class="custom_button_settings ui-btn-active ui-state-persist">Settings</a>
+					</li>
+				</ul>
+			</div>
 		</div>
 	</div>
-</div>
-<div id="spending" data-role="page">
-	<div data-role="header" id="custom_header" data-position="fixed">
-		<h1>Spending</h1>
-	</div>
-	<div data-role="footer" id='custom_footer' data-position="fixed">
-		<div data-role="navbar" id="custom_navbar" data-position="fixed">
-			<ul>
-				<li>
-					<a href="#home" data-icon="home" data-transition="none" class="custom_button_home">Home</a>
-				</li>
-				<li>
-					<a href="#" data-icon="usd" data-transition="none" class="custom_button_spending ui-btn-active ui-state-persist">Spending</a>
-				</li>
-				<li>
-					<a href="#dining" data-icon="cutlery" data-transition="none" class="custom_button_dining">Dining</a>
-				</li>
-				<li>
-					<a href="#workout" data-icon="heart" data-transition="none" class="custom_button_workout">Workout</a>
-				</li>
-				<li>
-					<a href="#settings" data-icon="wrench" data-transition="none" class="custom_button_settings">Settings</a>
-				</li>
-			</ul>
-		</div>
-	</div>
-</div>
-<div id="dining" data-role="page">
-	<div data-role="header" id="custom_header" data-position="fixed">
-		<h1>Dining</h1>
-	</div>
-	<div data-role="footer" id='custom_footer' data-position="fixed">
-		<div data-role="navbar" id="custom_navbar" data-position="fixed">
-			<ul>
-				<li>
-					<a href="#home" data-icon="home" data-transition="none" class="custom_button_home"  >Home</a>
-				</li>
-				<li>
-					<a href="#spending" data-icon="usd" data-transition="none" class="custom_button_spending">Spending</a>
-				</li>
-				<li>
-					<a href="#" data-icon="cutlery" data-transition="none" class="custom_button_dining ui-btn-active ui-state-persist">Dining</a>
-				</li>
-				<li>
-					<a href="#workout" data-icon="heart" data-transition="none" class="custom_button_workout">Workout</a>
-				</li>
-				<li>
-					<a href="#settings" data-icon="wrench" data-transition="none" class="custom_button_settings">Settings</a>
-				</li>
-			</ul>
-		</div>
-	</div>
-</div>
-<div id="workout" data-role="page">
-	<div data-role="header" id="custom_header" data-position="fixed">
-		<h1>Workout</h1>
-	</div>
-	<div data-role="footer" id='custom_footer' data-position="fixed">
-		<div data-role="navbar" id="custom_navbar" data-position="fixed">
-			<ul>
-				<li>
-					<a href="#home" data-icon="home" data-transition="none" class="custom_button_home"  >Home</a>
-				</li>
-				<li>
-					<a href="#spending" data-icon="usd" data-transition="none" class="custom_button_spending">Spending</a>
-				</li>
-				<li>
-					<a href="#dining" data-icon="cutlery" data-transition="none" class="custom_button_dining">Dining</a>
-				</li>
-				<li>
-					<a href="#" data-icon="heart" data-transition="none" class="custom_button_workout ui-btn-active ui-state-persist">Workout</a>
-				</li>
-				<li>
-					<a href="#settings" data-icon="wrench" data-transition="none" class="custom_button_settings">Settings</a>
-				</li>
-			</ul>
-		</div>
-	</div>
-</div>
-<div id="settings" data-role="page">
-	<div data-role="header" id="custom_header" data-position="fixed">
-		<h1>Settings</h1>
-	</div>
-	<div data-role="footer" id='custom_footer' data-position="fixed">
-		<div data-role="navbar" id="custom_navbar" data-position="fixed">
-			<ul>
-				<li>
-					<a href="#home" data-icon="home" data-transition="none" class="custom_button_home"  >Home</a>
-				</li>
-				<li>
-					<a href="#spending" data-icon="usd" data-transition="none" class="custom_button_spending">Spending</a>
-				</li>
-				<li>
-					<a href="#dining" data-icon="cutlery" data-transition="none" class="custom_button_dining">Dining</a>
-				</li>
-				<li>
-					<a href="#workout" data-icon="heart" data-transition="none" class="custom_button_workout">Workout</a>
-				</li>
-				<li>
-					<a href="#" data-icon="wrench" data-transition="none" class="custom_button_settings ui-btn-active ui-state-persist">Settings</a>
-				</li>
-			</ul>
-		</div>
-	</div>
-</div>
 
 	
-<div id="loginworkout" data-role="page"> <!--JW Responsible for this page-->
-		<div data-role="header" id="custom_header" data-position="fixed">	 
-		    <div class="backimageholder"><a href="#home"><img src="prototype_images/arrow-left-white.png" class="backimage"></a></div><div id="header_logmeal">Log New Workout</div>
-		</div>
-		<form>
-		  	<div class="container">
-		  		<div class="pagetext" id="CurrentTime1">Current Time: 12:45 PM</div>
-		  		<br>
-		   		<div class="pagetext">Program</div>
-		   		<input type="text" placeholder="Please Enter Program Name, e.g. Jogging">
-		   		<br>
-				<div class="pagetext">Start Time</div>
-				<input type="text" placeholder="Please Select Start Time" id="starttime">
-				<br>
-				<div class="pagetext">End Time</div>
-				<input type="text" placeholder="Please Select End Time" id="endtime">
-				<br>
-				<div class="pagetext">Duration</div>
-				<p id="duration">Please Select Start Time and End Time</p>
-				<br>
-				<div class="pagetext">Total Calories Consumed:</div>
-				<p id="caloriesconsumed">Please Enter Workout Details</p>
-				<br>
-		    	<div data-role="navbar" id="submit_button_loginworkout">
-		    	<a href="#home"><p>Submit!</p></a>
-		    	</div>
-		   	</div>
-		</form>
-</div>	
+	<!-- workout login page, by jw -->
+	<div id="loginworkout" data-role="page"> <!--JW Responsible for this page-->
+			<div data-role="header" id="custom_header" data-position="fixed">	 
+				<h1>Log New Workout</h1>
+				<a href="#home" data-icon="chevron-circle-left" class="header-back-home-button" data-iconpos="notext">Home</a>
+			</div>
+			<form>
+			  	<div class="container">
+			  		<div class="pagetext" id="CurrentTime1">Current Time: 12:45 PM</div>
+			  		<br>
+			   		<div class="pagetext">Program</div>
+			   		<input type="text" placeholder="Please Enter Program Name, e.g. Jogging">
+			   		<br>
+					<div class="pagetext">Start Time</div>
+					<input type="text" placeholder="Please Select Start Time" id="starttime">
+					<br>
+					<div class="pagetext">End Time</div>
+					<input type="text" placeholder="Please Select End Time" id="endtime">
+					<br>
+					<div class="pagetext">Duration</div>
+					<p id="duration">Please Select Start Time and End Time</p>
+					<br>
+					<div class="pagetext">Total Calories Consumed:</div>
+					<p id="caloriesconsumed">Please Enter Workout Details</p>
+					<br>
+			    	<div data-role="navbar" id="submit_button_loginworkout">
+			    	<a href="#home" id="loginworkout_submit" data-transition="none"><p>Submit!</p></a>
+			    	</div>
+			   	</div>
+			</form>
+	</div>	
 
-<div id="loginmeals" data-role="page">  <!--JW Responsible for this page-->
-		<div data-role="header" id="custom_header" data-position="fixed">	 
-		    <div class="backimageholder"><a href="#home"><img src="prototype_images/arrow-left-white.png" class="backimage"></a></div><div id="header_logmeal">Log New Meal</div>
-		</div>
-		<form>
-		  	<div class="container">
-		  		<div class="pagetext" id="CurrentTime2">Current Time: 12:45 PM</div>
-		  		<br>
-		   		<div class="pagetext">Restaurant</div>
-		   		<input type="text" placeholder="Please Enter Restaurant Name, e.g. 527 Cafe">
-		   		<br>
-	   			<div class="pagetext">Meal Details and Ratings</div>
-	   			<p>Item #1</p>
-				<input type="text" placeholder="Please Enter Names of the Dishes, e.g. Taiwanese Green Bean with Pork and Rice">
-			    <p>Rating for #1</p>
-			    <div id="rateYo1"></div>
-			    <br>
-				<div id="ItemList1">
-					<p>Item #2</p>
-					<input type="text" placeholder="Please Enter Names of the Dishes, e.g. Potato Salad">
-			    	<p>Rating for #2</p>
-			    	<div id="rateYo2"></div>
-				</div>
-				<br>
-				<div id="ItemList2">
-					<p>Item #3</p>
-					<input type="text" placeholder="Please Enter Names of the Dishes, e.g. Mango Green Tea">
-			    	<p>Rating for #3</p>
-			    	<div id="rateYo3"></div>
-				</div>				              
-                <div class="AddDeleteItem">
-                <p id="AddItem">Add Item</p><p id="DeleteItem">Delete Item</p>
-                </div>
-				<div class="pagetext">Cost</div>
-				<input type="text" placeholder="Please Enter Total Cost of the Meal">  
-				<br>
-		    	<div data-role="navbar" id="submit_button_loginmeals">
-		    	<a href="#home"><p>Submit!</p></a>
-		    	</div>
-		   	</div>
-		</form>
-</div>
-	
-	
+	<!-- meal login page, by jw -->
+	<div id="loginmeals" data-role="page">  <!--JW Responsible for this page-->
+			<div data-role="header" id="custom_header" data-position="fixed">	 
+				<h1>Log New Meal</h1>
+				<a href="#home" data-icon="chevron-circle-left" class="header-back-home-button" data-iconpos="notext">Home</a>
+			</div>
+			<form>
+			  	<div class="container">
+			  		<div class="pagetext" id="CurrentTime2">Current Time: 12:45 PM</div>
+			  		<br>
+			   		<div class="pagetext">Restaurant</div>
+			   		<input type="text" placeholder="Please Enter Restaurant Name, e.g. 527 Cafe">
+			   		<br>
+		   			<div class="pagetext">Meal Details and Ratings</div>
+		   			<p>Item #1</p>
+					<input type="text" placeholder="Please Enter Names of the Dishes, e.g. Taiwanese Green Bean with Pork and Rice">
+				    <p>Rating for #1</p>
+				    <div id="rateYo1"></div>
+				    <br>
+					<div id="ItemList1">
+						<p>Item #2</p>
+						<input type="text" placeholder="Please Enter Names of the Dishes, e.g. Potato Salad">
+				    	<p>Rating for #2</p>
+				    	<div id="rateYo2"></div>
+					</div>
+					<br>
+					<div id="ItemList2">
+						<p>Item #3</p>
+						<input type="text" placeholder="Please Enter Names of the Dishes, e.g. Mango Green Tea">
+				    	<p>Rating for #3</p>
+				    	<div id="rateYo3"></div>
+					</div>				              
+	                <div class="AddDeleteItem">
+	                <p id="AddItem">Add Item</p><p id="DeleteItem">Delete Item</p>
+	                </div>
+					<div class="pagetext">Cost</div>
+					<input type="text" placeholder="Please Enter Total Cost of the Meal">  
+					<br>
+			    	<div data-role="navbar" id="submit_button_loginmeals">
+			    	<a href="#home" id="loginmeals_submit" data-transition="none"><p>Submit!</p></a>
+			    	</div>
+			   	</div>
+			</form>
+	</div>
 	
 </body>
 </html>

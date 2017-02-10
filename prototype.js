@@ -117,3 +117,23 @@ $(document).ready(function(){
 		calculate();
 	});	
 });
+
+
+/* initialzation needed for select popup page */
+$( function() {
+    $( "#select" ).enhanceWithin().popup();
+});
+
+/* reload the workout login page after submission */
+$(document).ready(function(){
+  $("#loginworkout_submit").click(function(){
+ location.reload();
+  });
+});
+
+/* reload the meal login page after submission */
+$(document).ready(function(){
+  $("#loginmeals_submit").click(function(){
+ location.reload();
+  });
+});

@@ -9,7 +9,12 @@
 	color:white;
 	font-weight: bold;
 	height: 3em;
-	font-size: 2em;
+	font-size: 2rem;
+	width:100%;
+}
+
+h1, h2{ /* center text at all h1 and h2 headers */
+	text-align: center;
 }
 
 #custom_navbar .ui-btn{ /* customize the navigation bar */
@@ -34,7 +39,7 @@
     top:1.2em;
 }
 
-.ui-btn-active:after{
+.ui-btn-active:after{ /* made the buttons in navbar appear red when active */
 	background-color: red;
 }
 
@@ -42,12 +47,20 @@
 	background-position: 0.4em, 0.3em;
 }
 
-.ui-icon-cutlery:after{ /* adjust the position of the image in the dining icon */
+.ui-icon-plus-circle:after{ /* adjust the position of the image in the plus icon */
 	background-position: 0.25em, 0.3em;
 }
 
-#collapsible_home{
+.ui-icon-cutlery:after{ /* adjust the position of the image in the meal icon */
+	background-position: 0.25em, 0.3em;
+}
 
+.ui-icon-dribble:after{ /* adjust the position of the image in the workou icon */
+	background-position: 0.25em, 0.3em;
+}
+
+a.ui-link.ui-btn.ui-icon-dribble.ui-btn-icon-top, a.ui-link.ui-btn.ui-icon-cutlery.ui-btn-icon-top{ /* slightly adjust the border radius of two buttons in select popup */
+	border-radius: 0.2em;
 }
 
 .ui-collapsible-content.ui-body-inherit{
@@ -78,6 +91,7 @@
 
 /*SJW Code*/
 
+
 img.backimage {
     width: 30%;
 }
@@ -89,7 +103,7 @@ img.backimage {
 	float:left;
 }
 
-#header_logmeal{   /* customize header */
+#header_logmeal{   /* customize header for meal login page*/
 	float: left;
     position: absolute;
     left: 0;
@@ -98,7 +112,7 @@ img.backimage {
     text-align: center;
 }
 
-.pagetext {
+.pagetext, label.pagetext { /* adjust font styles for class pagetext */
 	font-size: 1.5em;
 	font-weight: bold;
 	color: black;
@@ -149,3 +163,79 @@ img.backimage {
 }
 
 /*End of SJW Code*/
+
+
+.imgcontainer { /* main login page image (avatar) */
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+img.avatar {
+    width: 20%;
+    border-radius: 50%;
+
+}
+
+.container { /* general container */
+    padding: 1em;
+    padding-top: 0.5em;
+}
+
+input[type=text], input[type=password] { /* style the text in input boxes */
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+}
+
+div.ui-checkbox{ /* style the checkbox on main login page */
+	margin-top: 1.5em;
+}
+
+#checkbox_text{ /* style the text following the checkbox on main login page */
+	display: inline;
+	font-size: 1em;
+	position:relative;
+	left:2em;
+	top:-0.7em;
+	margin-bottom: -0.2em;
+}
+
+#login_submit a, #register_submit a, #back_to_login a, #reset_password_submit a{ /* style the submit buttons of main login, register, reset password and confirm popups */
+	height: 0.1em;
+	font-size:1.2em;
+	border-radius: 0.8em;
+}
+#login_submit a p, #register_submit a p, #back_to_login a p, #reset_password_submit a p{ /* style the submit buttons of main login, register, reset password and confirm popups */
+	position:relative;
+	top:-3em;
+}
+
+/*div#login_submit.ui-navbar{
+	font-size: 1em;
+} */
+
+
+.header-back-home-button{ /* style the back home button in headers */
+	width:15%;
+	background-color: red !important;
+	border-width: 0px !important;
+	box-shadow: none !important;
+	position: relative;
+	margin-top: -9rem !important;
+	margin-left: 3rem !important;
+}
+
+.header-back-home-button:after{ /* style the back home button in headers */
+	background-repeat: no-repeat;
+    background-position: center;
+    background-color: red;
+    size:30em !important;
+    top:3em;
+}
+
+.header-back-home-button.ui-link:after { /* style the back home button in headers, scale the icon in the button */
+    ms-transform: scale(4.5); /* IE 9 */
+    -webkit-transform: scale(4.5); /* Chrome, Safari, Opera */
+    transform: scale(4.5);
+}
