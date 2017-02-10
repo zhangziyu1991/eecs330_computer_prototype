@@ -120,18 +120,24 @@ img.backimage {
 	display: none;
 }
 
-#submit_button_loginitem a {
+#submit_button_loginmeals a {
 	height: 0.1em;
 	font-size:1.2em;
 	border-radius: 0.8em;
 }
-#submit_button_loginitem a p{
+#submit_button_loginmeals a p{
 	position:relative;
 	top:-3em;
 }
 
-#example {
-	display: none;
+#submit_button_loginworkout a {
+	height: 0.1em;
+	font-size:1.2em;
+	border-radius: 0.8em;
+}
+#submit_button_loginworkout a p{
+	position:relative;
+	top:-3em;
 }
 
 #duration{
