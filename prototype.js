@@ -50,7 +50,8 @@ function calculate(){   /*Helper function to execute after the user selects time
 }
 
 $(document).ready(function(){
-	$("#CurrentTime").text(CurrentTime);
+	$("#CurrentTime1").text(CurrentTime);
+	$("#CurrentTime2").text(CurrentTime);
 
   	$("#rateYo1").rateYo({
     	rating: 3,
@@ -92,11 +93,6 @@ $(document).ready(function(){
         	CurrentList --;
         }
     });
-
-    $("#submit_button_loginitem").mousedown(function(){
-    	alert("Your entries has been recorded successfully!");
-    });    
-
 
 	$('#starttime').timepicker({
 	});
