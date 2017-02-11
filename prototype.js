@@ -55,17 +55,17 @@ $(document).ready(function(){
 
   	$("#rateYo1").rateYo({
     	rating: 3,
-    	halfStar: true,
+    	fullStar: true
     });
 
   	$("#rateYo2").rateYo({
     	rating: 3,
-    	halfStar: true,
+    	fullStar: true
   	});
 
   	$("#rateYo3").rateYo({
     	rating: 3,
-    	halfStar: true,
+    	fullStar: true
   	});
 
     $("#AddItem").click(function(){

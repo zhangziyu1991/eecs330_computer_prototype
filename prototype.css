@@ -1,4 +1,4 @@
-.ui-page-theme-a{  /* remove shadow when button is clicked, change font color to white when button is clicked */
+.ui-page-threme-a{  /* remove shadow when button is clicked, change font color to white when button is clicked */
 	-webkit-box-shadow: 0px;
 	-moz-box-shadow: 0px;
 	box-shadow: 0px;
@@ -8,9 +8,10 @@
 	background-color: red;
 	color:white;
 	font-weight: bold;
-	height: 3em;
-	font-size: 2rem;
-	width:100%;
+	height: 3.5rem;
+	font-size: 1.5rem;
+	padding-top: 0.3rem;
+	padding-bottom:0.5rem;
 }
 
 h1, h2{ /* center text at all h1 and h2 headers */
@@ -18,8 +19,8 @@ h1, h2{ /* center text at all h1 and h2 headers */
 }
 
 #custom_navbar .ui-btn{ /* customize the navigation bar */
-	height: 1em; 
-	font-size: 1em;
+	height: 1rem; 
+	font-size: 0.8rem !important;
 }
 
 #custom_footer{ /* customzie the footer */
@@ -27,16 +28,16 @@ h1, h2{ /* center text at all h1 and h2 headers */
 }
 
 .ui-link.ui-btn{ /* adjust position of button texts */
-	padding-top: 3.5em;
+	padding-top: 3.5rem;
 }
 
 .ui-btn:after { /* scaling the icons in the buttons and adjust the position of the icons*/
     background-repeat: no-repeat;
     background-position: center;
-    ms-transform: scale(2.2); /* IE 9 */
-    -webkit-transform: scale(2.2); /* Chrome, Safari, Opera */
-    transform: scale(2.2);
-    top:1.2em;
+    ms-transform: scale(2); /* IE 9 */
+    -webkit-transform: scale(2); /* Chrome, Safari, Opera */
+    transform: scale(2);
+    top:1.2rem;
 }
 
 .ui-btn-active:after{ /* made the buttons in navbar appear red when active */
@@ -44,23 +45,23 @@ h1, h2{ /* center text at all h1 and h2 headers */
 }
 
 .ui-icon-usd:after{ /* adjust the position of the image in the spending icon */
-	background-position: 0.4em, 0.3em;
+	background-position: 0.4rem, 0.3rem;
 }
 
 .ui-icon-plus-circle:after{ /* adjust the position of the image in the plus icon */
-	background-position: 0.25em, 0.3em;
+	background-position: 0.25rem, 0.3rem;
 }
 
 .ui-icon-cutlery:after{ /* adjust the position of the image in the meal icon */
-	background-position: 0.25em, 0.3em;
+	background-position: 0.25rem, 0.3rem;
 }
 
 .ui-icon-dribble:after{ /* adjust the position of the image in the workou icon */
-	background-position: 0.25em, 0.3em;
+	background-position: 0.25rem, 0.3rem;
 }
 
 a.ui-link.ui-btn.ui-icon-dribble.ui-btn-icon-top, a.ui-link.ui-btn.ui-icon-cutlery.ui-btn-icon-top{ /* slightly adjust the border radius of two buttons in select popup */
-	border-radius: 0.2em;
+	border-radius: 0.2rem;
 }
 
 .ui-collapsible-content.ui-body-inherit{
@@ -84,10 +85,6 @@ a.ui-link.ui-btn.ui-icon-dribble.ui-btn-icon-top, a.ui-link.ui-btn.ui-icon-cutle
 	/*height: 30%;*/
 }
 
-/*.ui-icon-delete::after {
-    width: 1rem !important;
-    height: 1rem !important;
-}*/
 
 /*SJW Code*/
 
@@ -98,8 +95,8 @@ img.backimage {
 
 .backimageholder{
 	text-align: left;
-	padding-left: 0.5em;
-	padding-top: 1em;
+	padding-left: 0.5rem;
+	padding-top: 1rem;
 	float:left;
 }
 
@@ -113,45 +110,45 @@ img.backimage {
 }
 
 .pagetext, label.pagetext { /* adjust font styles for class pagetext */
-	font-size: 1.5em;
+	font-size: 1.5rem;
 	font-weight: bold;
 	color: black;
 }
 
-.AddDeleteItem {
-	font-size: 1.0em;
+.AddDeleteItrem {
+	font-size: 1.0rem;
 	color: black;
 	text-align: left;
 	text-decoration: underline;
 	width: 20%;
 }
 
-#DeleteItem{
+#DeleteItrem{
 	display:none;
 }
 
-#ItemList1, #ItemList2 {
+#ItremList1, #ItremList2 {
 	display: none;
 }
 
 #submit_button_loginmeals a {
-	height: 0.1em;
-	font-size:1.2em;
-	border-radius: 0.8em;
+	height: 0.1rem;
+	font-size:1.2rem;
+	border-radius: 0.8rem;
 }
 #submit_button_loginmeals a p{
 	position:relative;
-	top:-3em;
+	top:-3rem;
 }
 
 #submit_button_loginworkout a {
-	height: 0.1em;
-	font-size:1.2em;
-	border-radius: 0.8em;
+	height: 0.1rem;
+	font-size:1.2rem;
+	border-radius: 0.8rem;
 }
 #submit_button_loginworkout a p{
 	position:relative;
-	top:-3em;
+	top:-3rem;
 }
 
 #duration{
@@ -177,8 +174,8 @@ img.avatar {
 }
 
 .container { /* general container */
-    padding: 1em;
-    padding-top: 0.5em;
+    padding: 1rem;
+    padding-top: 0.5rem;
 }
 
 input[type=text], input[type=password] { /* style the text in input boxes */
@@ -189,57 +186,58 @@ input[type=text], input[type=password] { /* style the text in input boxes */
 }
 
 div.ui-checkbox{ /* style the checkbox on main login page */
-	margin-top: 1.5em;
+	margin-top: 1.5rem;
 }
 
 #checkbox_text{ /* style the text following the checkbox on main login page */
 	display: inline;
-	font-size: 1em;
+	font-size: 1rem;
 	position:relative;
-	left:2em;
-	top:-0.7em;
-	margin-bottom: -0.2em;
+	left:2rem;
+	top:-0.7rem;
+	margin-bottom: -0.2rem;
 }
 
 #login_submit a, #register_submit a, #back_to_login a, #reset_password_submit a{ /* style the submit buttons of main login, register, reset password and confirm popups */
-	height: 0.1em;
-	font-size:1.2em;
-	border-radius: 0.8em;
+	height: 0.1rem;
+	font-size:1.2rem;
+	border-radius: 0.8rem;
 }
 #login_submit a p, #register_submit a p, #back_to_login a p, #reset_password_submit a p{ /* style the submit buttons of main login, register, reset password and confirm popups */
 	position:relative;
-	top:-3em;
+	top:-3rem;
 }
 
 /*div#login_submit.ui-navbar{
-	font-size: 1em;
+	font-size: 1rem;
 } */
 
 
 .header-back-home-button{ /* style the back home button in headers */
-	width:15%;
+	width:10%;
+	height:0.1rem;
 	background-color: red !important;
 	border-width: 0px !important;
 	box-shadow: none !important;
 	position: relative;
-	margin-top: -9rem !important;
-	margin-left: 3rem !important;
+	margin-top: -7.5rem !important;
+	margin-left: 1.5rem !important;
 }
 
 .header-back-home-button:after{ /* style the back home button in headers */
 	background-repeat: no-repeat;
     background-position: center;
     background-color: red;
-    size:30em !important;
-    top:3em;
+    left:1.4rem;
+    top:2rem;
 }
 
 .header-back-home-button.ui-link:after { /* style the back home button in headers, scale the icon in the button */
-    ms-transform: scale(4.5); /* IE 9 */
-    -webkit-transform: scale(4.5); /* Chrome, Safari, Opera */
-    transform: scale(4.5);
+    ms-transform: scale(2); /* IE 9 */
+    -webkit-transform: scale(2); /* Chrome, Safari, Opera */
+    transform: scale(2);
 }
 
-#newentry {
+#navbar_newentry{ /*customize the newentry button in navbar*/
 	background-color: rgb(180,180,180);
-}
+} 
