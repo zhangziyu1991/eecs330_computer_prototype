@@ -23,7 +23,9 @@
 
 	<script src="time/jquery.timepicker.min.js"></script>      <!--Timepicker Plugin Credit to https://github.com/jonthornton/jquery-timepicker#timepicker-plugin-for-jquery-->
 	<link rel="stylesheet" href="time/jquery.timepicker.css">	
-	
+
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<script type="text/javascript" src="charts.js"></script>
 </head>
 <body>
 
@@ -196,7 +198,10 @@
 	<div id="spending" data-role="page">
 		<div data-role="header" id="custom_header" data-position="fixed">
 			<h1>Spending</h1>
+			<!-- <script src="pie_chart.js"></script> -->
 		</div>
+		<div id="donutchart" style="width: 100%; height: 50%;"></div>
+		<div id="donutchart2" style="width: 100%; height: 50%;"></div>
 		<div data-role="footer" id='custom_footer' data-position="fixed">
 			<div data-role="navbar" id="custom_navbar" data-position="fixed">
 				<ul>
