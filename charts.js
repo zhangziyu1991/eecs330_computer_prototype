@@ -15,7 +15,7 @@ function drawChart() {
 		fontSize: 11
 	};
 
-	var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+	var chart = new google.visualization.PieChart(document.getElementById('donut_chart'));
 	chart.draw(data, options);
 }
 
@@ -36,6 +36,29 @@ function drawChart2() {
 		fontSize: 11
 	};
 
-	var chart = new google.visualization.PieChart(document.getElementById('donutchart2'));
+	var chart = new google.visualization.PieChart(document.getElementById('donut_chart_2'));
 	chart.draw(data, options);
 }
+
+google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart3);
+
+      function drawChart3() {
+        var data = google.visualization.arrayToDataTable([
+          ['Date', 'Expenditures'],
+          ['2/10/2017',  24.87],
+          ['2/11/2017',  29.32],
+          ['2/12/2017',  31.15],
+          ['2/13/2017',  26.47]]);
+
+        var options = {
+          title: 'Expenditure by Day (in U.S. Dollars)',
+          curveType: 'function',
+          legend: {position: 'none'},
+          fontSize: 11,
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('map_chart'));
+
+        chart.draw(data, options);
+      }
