@@ -20,7 +20,7 @@ h1, h2{ /* center text at all h1 and h2 headers */
 
 #custom_navbar .ui-btn{ /* customize the navigation bar */
 	height: 1rem; 
-	font-size: 0.8rem !important;
+	font-size: 0.6rem !important;
 }
 
 #custom_footer{ /* customzie the footer */
@@ -111,7 +111,7 @@ img.backimage {
 	color: black;
 }
 
-.AddDeleteItrem {
+.AddDeleteItem {
 	font-size: 1.0rem;
 	color: black;
 	text-align: left;
@@ -119,11 +119,11 @@ img.backimage {
 	width: 20%;
 }
 
-#DeleteItrem{
+#DeleteItem{
 	display:none;
 }
 
-#ItremList1, #ItremList2 {
+#ItemList1, #ItemList2 {
 	display: none;
 }
 
