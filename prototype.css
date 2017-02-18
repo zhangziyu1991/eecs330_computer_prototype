@@ -106,7 +106,7 @@ img.backimage {
 }
 
 .pagetext, label.pagetext { /* adjust font styles for class pagetext */
-	font-size: 1.5rem;
+	font-size: 1.0rem;
 	font-weight: bold;
 	color: black;
 }
