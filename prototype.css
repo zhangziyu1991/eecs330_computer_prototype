@@ -40,6 +40,10 @@ h1, h2{ /* center text at all h1 and h2 headers */
     top:1.2rem;
 }
 
+.ui-collapsible-heading-toggle:after{ /* adjust position of up and down arrows in home collapsible */
+	top:2rem;
+}
+
 .ui-btn-active:after{ /* made the buttons in navbar appear red when active */
 	background-color: red;
 }
@@ -56,7 +60,15 @@ h1, h2{ /* center text at all h1 and h2 headers */
 	background-position: 0.25rem, 0.3rem;
 }
 
-.ui-icon-dribble:after{ /* adjust the position of the image in the workou icon */
+.ui-icon-dribble:after{ /* adjust the position of the image in the workout icon */
+	background-position: 0.25rem, 0.3rem;
+}
+
+.ui-icon-chevron-circle-up:after{ /* adjust the position of the image in the chevron-circle-up icon */
+	background-position: 0.25rem, 0.3rem;
+}
+
+.ui-icon-chevron-circle-down:after{ /* adjust the position of the image in the chevron-circle-down icon */
 	background-position: 0.25rem, 0.3rem;
 }
 
