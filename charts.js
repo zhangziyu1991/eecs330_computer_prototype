@@ -12,7 +12,7 @@ function drawChart() {
 		title: 'Dining Locations - Total: 34 Visits',
 		fontSize: 12,
 		chartArea: {width: '50%'},
-		colors: ['green']
+		colors: ['green'],
 		// hAxis: {
 		// 	title: 'No. of Visits',
 		// 	minValue: 0
@@ -41,7 +41,7 @@ function drawChart2() {
 		title: 'Expenditures - Total: 540.63 U.S. Dollars',
 		fontSize: 12,
 		chartArea: {width: '50%'},
-		colors: ['purple']
+		colors: ['purple'],
 		// hAxis: {
 		// 	title: 'No. of Visits',
 		// 	minValue: 0
@@ -50,7 +50,7 @@ function drawChart2() {
 		// 	title: 'Location'
 		// }
 		// width: '100%',
-		// height: '50%'
+		// height: '100%'
 	};
 	var chart = new google.visualization.BarChart(document.getElementById('donut_chart_2'));
 	chart.draw(data, options);
@@ -69,7 +69,7 @@ function drawChart3() {
 		title: 'Expenditures by Day (in U.S. Dollars)',
 		// curveType: 'function',
 		legend: {position: 'none'},
-		fontSize: 12
+		fontSize: 12,
 		// width: '100%',
 		// height: '50%'
 	};
