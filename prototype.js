@@ -95,6 +95,7 @@ $(document).ready(function(){
     });
 
 	$('#starttime').timepicker({
+		disableTextInput: true
 	});
 
 	$('#starttime').on('changeTime', function() {
@@ -109,12 +110,16 @@ $(document).ready(function(){
 
 	$('#endtime').timepicker({
 		'minTime': starttime,
-		'maxTime': '11:30pm'
+		'maxTime': '11:30pm',
+		disableTextInput: true
 	});
 
 	$('#endtime').on('changeTime', function() {
 		endtimesec = $(this).timepicker('getSecondsFromMidnight');
 		calculate();
+	});	
+
+	$( "#Filters" ).selectmenu();
 	});	
 });
 
