@@ -94,8 +94,7 @@ a.ui-link.ui-btn.ui-icon-dribble.ui-btn-icon-top, a.ui-link.ui-btn.ui-icon-cutle
 
 /*****************  Ziyu's Code End  *****************/
 
-/*SJW Code*/
-
+/***************** JW's Code Start *****************/
 
 img.backimage {
     width: 30%;
@@ -167,7 +166,48 @@ img.backimage {
 	font-weight: bold;
 }
 
-/*End of SJW Code*/
+/*Restaurant Pages*/
+
+#Address{
+	height: 2rem;
+}
+
+#RankBy{
+	height: 3rem;	
+}
+
+#FilterContainer {
+	float: right;
+	width: 70%;
+	margin-top:-2.2rem;
+}
+
+#Filters-button {
+	background-color: white;
+	height: 1rem;
+}
+
+#Filters-button.ui-btn:after {
+    ms-transform: scale(1); /* IE 9 */
+    -webkit-transform: scale(1); /* Chrome, Safari, Opera */
+    transform: scale(1);
+} 
+
+.Restaurant_Image{
+	width: 5.8rem;
+	height: 5.8rem;
+	float: right;
+	margin-top:-6.9rem;
+}
+
+.Favouritebutton{
+	float: right;
+	margin-top:-9rem;
+}
+
+
+
+/*****************  JW's Code End  *****************/
 
 
 .imgcontainer { /* main login page image (avatar) */
