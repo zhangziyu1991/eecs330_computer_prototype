@@ -26,6 +26,8 @@
 
 	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 	<script type="text/javascript" src="charts.js"></script>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
@@ -226,39 +228,96 @@
 		</div>
 	</div>
 
-	<!-- new entry page -->
-	<div id="entry" data-role="page">
-		<div data-role="header" id="custom_header" data-position="fixed">
-			<h1>Health</h1>
-		</div>
-		<div data-role="footer" id='custom_footer' data-position="fixed">
-			<div data-role="navbar" id="custom_navbar" data-position="fixed">
-				<ul>
-					<li>
-						<a href="#home" data-icon="home" data-transition="none">Home</a>
-					</li>
-					<li>
-						<a href="#spending" data-icon="usd" data-transition="none">Spending</a>
-					</li>
-					<li>
-						<a href="#select" id="navbar_newentry" data-rel="popup" data-position-to="window" data-transition="none" data-icon="edit">New Entry</a>
-					</li>
-					<li>
-						<a href="#dinning" data-icon="coffee" data-transition="none">Restaurants</a>
-					</li>
-					<li>
-						<a href="#settings" data-icon="wrench" data-transition="none">Settings</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</div>
+
+
 
 	<!-- restaurants page -->
 	<div id="dinning" data-role="page">
 		<div data-role="header" id="custom_header" data-position="fixed">
 			<h1>Restaurants</h1>
 		</div>
+		<form>
+			<div class="container">
+				<div id="Address">
+			  		<input placeholder="Enter Your Address Here" >
+				</div>
+				<br>
+				<div id="RankBy">
+					<div class="pagetext">Rank by: </div>
+					<div id="FilterContainer">
+	   					<select id="Filters">
+      						<option>Ratings (Descending)</option>
+      						<option>Price (Descending)</option>
+      						<option>Price (Ascending)</option>
+      						<option>Healthiness (Descending)</option>
+      						<option>Healthiness (Ascending)</option>
+    					</select>
+					</div>
+				</div>
+				<!--First Restaurant-->
+				<div>
+					<p class="pagetext">Joyyee Noodles</p>
+					<i class="fa fa-star" style="color:#f1c40f"></i>
+					<i class="fa fa-star" style="color:#f1c40f"></i>
+					<i class="fa fa-star" style="color:#f1c40f"></i>
+					<i class="fa fa-star" style="color:#f1c40f"></i> 
+					<i class="fa fa-at" style="visibility: hidden"></i>  
+					<i class="fa fa-dollar" style="color:black"></i>
+					<i class="fa fa-dollar" style="color:black"></i>
+					<i class="fa fa-dollar" style="color:black"></i>
+					<i class="fa fa-at" style="visibility: hidden"></i>  
+					<i class="fa fa-gittip" style="color:red"></i>
+					<i class="fa fa-gittip" style="color:red"></i>
+					<p>Distance: 500m</p>
+					<p>Style: Asian</p>
+					<div class="Favouritebutton"><i class="fa fa-heart-o" style="color:red"></i></div>
+					<img src="prototype_images/Joyyee.jpg" class="Restaurant_Image">
+					<a href="#Joyyee" data-transition="none">Test Link</a>
+				</div>
+				<br>
+				<!--Second Restaurant-->
+				<div>
+					<p class="pagetext">Naf Naf Grill</p>
+					<i class="fa fa-star" style="color:#f1c40f"></i>
+					<i class="fa fa-star" style="color:#f1c40f"></i>
+					<i class="fa fa-star" style="color:#f1c40f"></i>
+					<i class="fa fa-star" style="color:#f1c40f"></i> 
+					<i class="fa fa-at" style="visibility: hidden"></i>  
+					<i class="fa fa-dollar" style="color:black"></i>
+					<i class="fa fa-dollar" style="color:black"></i>
+					<i class="fa fa-at" style="visibility: hidden"></i>  
+					<i class="fa fa-gittip" style="color:red"></i>
+					<i class="fa fa-gittip" style="color:red"></i>
+					<i class="fa fa-gittip" style="color:red"></i>
+					<p>Distance: 100m</p>
+					<p>Style: Middle Eastern</p>
+					<div class="Favouritebutton"><i class="fa fa-heart-o" style="color:red"></i></div>
+					<img src="prototype_images/Nafnaf.jpg" class="Restaurant_Image">
+					<a href="#Nafnaf" data-transition="none">Test Link</a>
+				</div>
+				<br>
+				<!--Third Restaurant-->
+				<div>
+					<p class="pagetext">LYFE Kitchen</p>
+					<i class="fa fa-star" style="color:#f1c40f"></i>
+					<i class="fa fa-star" style="color:#f1c40f"></i>
+					<i class="fa fa-star" style="color:#f1c40f"></i>
+						<i class="fa fa-at" style="visibility: hidden"></i>  
+					<i class="fa fa-dollar" style="color:black"></i>
+					<i class="fa fa-dollar" style="color:black"></i>
+					<i class="fa fa-at" style="visibility: hidden"></i>  
+					<i class="fa fa-gittip" style="color:red"></i>
+					<i class="fa fa-gittip" style="color:red"></i>
+					<i class="fa fa-gittip" style="color:red"></i>
+					<i class="fa fa-gittip" style="color:red"></i>
+					<p>Distance: 150m</p>
+					<p>Style: Healthy Food</p>
+					<div class="Favouritebutton"><i class="fa fa-heart-o" style="color:red"></i></div>
+					<img src="prototype_images/LYFE.jpg" class="Restaurant_Image">
+					<a href="#LYFE" data-transition="none">Test Link</a>
+				</div>
+			</div>
+		</form>
 		<div data-role="footer" id='custom_footer' data-position="fixed">
 			<div data-role="navbar" id="custom_navbar" data-position="fixed">
 				<ul>
@@ -281,6 +340,231 @@
 			</div>
 		</div>
 	</div>
+
+	<!-- Restaurant-Joyyee page -->
+	<div id="Joyyee" data-role="page"> 
+			<div data-role="header" id="custom_header" data-position="fixed">	 
+				<h1></h1>
+				<a href="#dinning" data-icon="chevron-circle-left" class="header-back-home-button" data-iconpos="notext">Home</a>
+			</div>
+			<form>
+			<div class="container">
+				<div>
+					<p class="pagetext">Joyyee Noodles</p>
+					<i class="fa fa-star" style="color:#f1c40f"></i>
+					<i class="fa fa-star" style="color:#f1c40f"></i>
+					<i class="fa fa-star" style="color:#f1c40f"></i>
+					<i class="fa fa-star" style="color:#f1c40f"></i> 
+					<i class="fa fa-at" style="visibility: hidden"></i>  
+					<i class="fa fa-dollar" style="color:black"></i>
+					<i class="fa fa-dollar" style="color:black"></i>
+					<i class="fa fa-dollar" style="color:black"></i>
+					<i class="fa fa-at" style="visibility: hidden"></i>  
+					<i class="fa fa-gittip" style="color:red"></i>
+					<i class="fa fa-gittip" style="color:red"></i>
+					<p>Address: 519 Davis St (500m) </p>
+					<p>Phone: (847) 733-1900</p>
+					<p>Style: Asian</p>
+					<img src="prototype_images/Joyyee.jpg" class="Restaurant_Image">
+					<div class="Favouritebutton"><i class="fa fa-heart-o" style="color:red"></i></div>
+				</div>
+				<br>
+				<p class="pagetext">Popular Items:</p>
+				<div>
+					<p>Milk Tea</p>
+					<i class="fa fa-star" style="color:#f1c40f"></i>
+					<i class="fa fa-star" style="color:#f1c40f"></i>					
+					<i class="fa fa-star" style="color:#f1c40f"></i>
+					<i class="fa fa-star" style="color:#f1c40f"></i>
+					<i class="fa fa-star" style="color:#f1c40f"></i> 
+					<i class="fa fa-at" style="visibility: hidden"></i>  
+					<i class="fa fa-dollar" style="color:black">4.95</i>
+					<i class="fa fa-at" style="visibility: hidden"></i>					
+					<i class="fa fa-gittip" style="color:red"> 523.6 cal</i>
+					<p>Extra toppings available.</p>
+					<img src="prototype_images/Joyyee-MT.jpg" class="Restaurant_Image">
+				</div>
+				<br>	
+				<div>
+					<p>Noodle Soup</p>
+					<i class="fa fa-star" style="color:#f1c40f"></i>
+					<i class="fa fa-star" style="color:#f1c40f"></i>
+					<i class="fa fa-star" style="color:#f1c40f"></i>
+					<i class="fa fa-star" style="color:#f1c40f"></i>
+					<i class="fa fa-at" style="visibility: hidden"></i>  
+					<i class="fa fa-dollar" style="color:black"> 7.95</i>
+					<i class="fa fa-at" style="visibility: hidden"></i>					
+					<i class="fa fa-gittip" style="color:red"> 350.2 cal</i>
+					<p>Protein choice of beef or chicken.</p>
+					<img src="prototype_images/Joyyee-NS.jpg" class="Restaurant_Image">
+				</div>
+				<br>
+				<div>
+					<p>Basil Beef</p>
+					<i class="fa fa-star" style="color:#f1c40f"></i>
+					<i class="fa fa-star" style="color:#f1c40f"></i>
+					<i class="fa fa-star" style="color:#f1c40f"></i>
+					<i class="fa fa-star-half-o" style="color:#f1c40f"></i> 
+					<i class="fa fa-at" style="visibility: hidden"></i>  
+					<i class="fa fa-dollar" style="color:black"> 10.95</i>
+					<i class="fa fa-at" style="visibility: hidden"></i>					
+					<i class="fa fa-gittip" style="color:red"> 369.3 cal</i>
+					<p>Served with white/brown rice.</p>
+					<img src="prototype_images/Joyyee-BB.jpg" class="Restaurant_Image">
+				</div>										
+			</div>		
+			</form>
+	</div>	
+
+	<!-- Restaurant-Nafnaf page -->
+	<div id="Nafnaf" data-role="page"> 
+			<div data-role="header" id="custom_header" data-position="fixed">	 
+				<h1></h1>
+				<a href="#dinning" data-icon="chevron-circle-left" class="header-back-home-button" data-iconpos="notext">Home</a>
+			</div>
+			<form>
+			<div class="container">
+				<div>
+					<p class="pagetext">Naf Naf Grill</p>
+					<i class="fa fa-star" style="color:#f1c40f"></i>
+					<i class="fa fa-star" style="color:#f1c40f"></i>
+					<i class="fa fa-star" style="color:#f1c40f"></i>
+					<i class="fa fa-star" style="color:#f1c40f"></i> 
+					<i class="fa fa-at" style="visibility: hidden"></i>  
+					<i class="fa fa-dollar" style="color:black"></i>
+					<i class="fa fa-dollar" style="color:black"></i>
+					<i class="fa fa-at" style="visibility: hidden"></i>  
+					<i class="fa fa-gittip" style="color:red"></i>
+					<i class="fa fa-gittip" style="color:red"></i>
+					<i class="fa fa-gittip" style="color:red"></i>					
+					<p>Address: 1629 Orrington Ave (100m) </p>
+					<p>Phone: (847) 866-8470</p>
+					<p>Style: Middle Eastern</p>
+					<img src="prototype_images/Nafnaf.jpg" class="Restaurant_Image">
+					<div class="Favouritebutton"><i class="fa fa-heart-o" style="color:red"></i></div>
+				</div>
+				<br>
+				<p class="pagetext">Popular Items:</p>
+				<div>
+					<p>Pita</p>
+					<i class="fa fa-star" style="color:#f1c40f"></i>
+					<i class="fa fa-star" style="color:#f1c40f"></i>					
+					<i class="fa fa-star" style="color:#f1c40f"></i>
+					<i class="fa fa-star" style="color:#f1c40f"></i>
+					<i class="fa fa-star" style="color:#f1c40f"></i> 
+					<i class="fa fa-at" style="visibility: hidden"></i>  
+					<i class="fa fa-dollar" style="color:black">6.79</i>
+					<i class="fa fa-at" style="visibility: hidden"></i>					
+					<i class="fa fa-gittip" style="color:red"> 530 cal</i>
+					<p>With beef, chicken or falafel fillings.</p>
+					<img src="prototype_images/Nafnaf-Pita.jpg" class="Restaurant_Image">
+				</div>
+				<br>	
+				<div>
+					<p>Rice Bowl</p>
+					<i class="fa fa-star" style="color:#f1c40f"></i>
+					<i class="fa fa-star" style="color:#f1c40f"></i>
+					<i class="fa fa-star" style="color:#f1c40f"></i>
+					<i class="fa fa-star" style="color:#f1c40f"></i>
+					<i class="fa fa-at" style="visibility: hidden"></i>  
+					<i class="fa fa-dollar" style="color:black"> 11.99</i>
+					<i class="fa fa-at" style="visibility: hidden"></i>					
+					<i class="fa fa-gittip" style="color:red"> 440 cal</i>
+					<p>With beef, chicken or falafel fillings.</p>
+					<img src="prototype_images/Nafnaf-RB.jpg" class="Restaurant_Image">
+				</div>
+				<br>
+				<div>
+					<p>Veggie Feast</p>
+					<i class="fa fa-star" style="color:#f1c40f"></i>
+					<i class="fa fa-star" style="color:#f1c40f"></i>
+					<i class="fa fa-star" style="color:#f1c40f"></i>
+					<i class="fa fa-star-half-o" style="color:#f1c40f"></i> 
+					<i class="fa fa-at" style="visibility: hidden"></i>  
+					<i class="fa fa-dollar" style="color:black"> 9.99</i>
+					<i class="fa fa-at" style="visibility: hidden"></i>					
+					<i class="fa fa-gittip" style="color:red"> 600 cal</i>
+					<p>Hummus & baba ghanoush available.</p>
+					<img src="prototype_images/Nafnaf-VF.jpg" class="Restaurant_Image">
+				</div>										
+			</div>		
+			</form>
+	</div>	
+
+	<!-- Restaurant-LYFE page -->
+	<div id="LYFE" data-role="page"> 
+			<div data-role="header" id="custom_header" data-position="fixed">	 
+				<h1></h1>
+				<a href="#dinning" data-icon="chevron-circle-left" class="header-back-home-button" data-iconpos="notext">Home</a>
+			</div>
+			<form>
+			<div class="container">
+				<div>
+					<p class="pagetext">LYFE</p>
+					<i class="fa fa-star" style="color:#f1c40f"></i>
+					<i class="fa fa-star" style="color:#f1c40f"></i>
+					<i class="fa fa-star" style="color:#f1c40f"></i> 
+					<i class="fa fa-at" style="visibility: hidden"></i>  
+					<i class="fa fa-dollar" style="color:black"></i>
+					<i class="fa fa-dollar" style="color:black"></i>
+					<i class="fa fa-at" style="visibility: hidden"></i>  
+					<i class="fa fa-gittip" style="color:red"></i>
+					<i class="fa fa-gittip" style="color:red"></i>
+					<i class="fa fa-gittip" style="color:red"></i>
+					<i class="fa fa-gittip" style="color:red"></i>					
+					<p>Address: 1603 Orrington Ave (150m) </p>
+					<p>Phone: (847) 563-8242</p>
+					<p>Style: Healthy Food</p>
+					<img src="prototype_images/LYFE.jpg" class="Restaurant_Image">
+					<div class="Favouritebutton"><i class="fa fa-heart-o" style="color:red"></i></div>
+				</div>
+				<br>
+				<p class="pagetext">Popular Items:</p>
+				<div>
+					<p>Unfried Chicken</p>
+					<i class="fa fa-star" style="color:#f1c40f"></i>
+					<i class="fa fa-star" style="color:#f1c40f"></i>					
+					<i class="fa fa-star" style="color:#f1c40f"></i>
+					<i class="fa fa-star" style="color:#f1c40f"></i>
+					<i class="fa fa-star" style="color:#f1c40f"></i> 
+					<i class="fa fa-at" style="visibility: hidden"></i>  
+					<i class="fa fa-dollar" style="color:black"> 14</i>
+					<i class="fa fa-at" style="visibility: hidden"></i>					
+					<i class="fa fa-gittip" style="color:red"> 566 cal</i>
+					<p>Served with assorted veggies.</p>
+					<img src="prototype_images/LYFE-UC.jpg" class="Restaurant_Image">
+				</div>
+				<br>	
+				<div>
+					<p>Chicken Flatbread</p>
+					<i class="fa fa-star" style="color:#f1c40f"></i>
+					<i class="fa fa-star" style="color:#f1c40f"></i>
+					<i class="fa fa-star" style="color:#f1c40f"></i>
+					<i class="fa fa-star" style="color:#f1c40f"></i>
+					<i class="fa fa-at" style="visibility: hidden"></i>  
+					<i class="fa fa-dollar" style="color:black"> 10.5</i>
+					<i class="fa fa-at" style="visibility: hidden"></i>					
+					<i class="fa fa-gittip" style="color:red"> 474 cal</i>
+					<p>With BBQ sauce and cheese.</p>
+					<img src="prototype_images/LYFE-CF.jpg" class="Restaurant_Image">
+				</div>
+				<br>
+				<div>
+					<p>Farmhouse Burger</p>
+					<i class="fa fa-star" style="color:#f1c40f"></i>
+					<i class="fa fa-star" style="color:#f1c40f"></i>
+					<i class="fa fa-star" style="color:#f1c40f"></i>
+					<i class="fa fa-star-half-o" style="color:#f1c40f"></i> 
+					<i class="fa fa-at" style="visibility: hidden"></i>  
+					<i class="fa fa-dollar" style="color:black"> 9.5</i>
+					<i class="fa fa-at" style="visibility: hidden"></i>					
+					<i class="fa fa-gittip" style="color:red"> 590 cal</i>
+					<p>Gluten free upon request.</p>
+					<img src="prototype_images/LYFE-FB.jpg" class="Restaurant_Image">
+				</div>										
+			</div>		
+			</form>
+	</div>		
 
 	<!-- settings page -->
 	<div id="settings" data-role="page">
