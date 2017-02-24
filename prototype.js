@@ -120,7 +120,7 @@ $(document).ready(function(){
 	});	
 
 	$( "#Filters" ).selectmenu();
-	});	
+	// });	
 });
 
 
