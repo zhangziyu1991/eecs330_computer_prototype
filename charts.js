@@ -91,7 +91,7 @@ function drawTable() {
 		['2/15/17 11:47', 	'at home', 								{v:4.28,   	f: '$4.28'}]
 		]);
 	var options = {
-		showRowNumber: true,
+		showRowNumber: false,
 		width: '100%',
 		height: '100%',
 	}
@@ -113,7 +113,7 @@ function drawTable2() {
 		['2/11/17 08:47', 	'Studio Cycling', 	'0h 58m']
 		]);
 	var options = {
-		showRowNumber: true,
+		showRowNumber: false,
 		width: '100%',
 		height: '100%'
 	}

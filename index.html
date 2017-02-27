@@ -169,7 +169,7 @@
 			<div id="table_chart_2" style="color:#000000"></div>
 		</div>
 		
-		<div data-role="footer" id='custom_footer' data-position="fixed">
+		<div data-role="footer" id='custom_footer' data-position="fixed" data-tap-toggle="false">
 
 			<div data-role="navbar" id="custom_navbar" data-position="fixed">
 				<ul>
@@ -201,7 +201,7 @@
 		<div id="donut_chart" style="width: 100%; height: 50%;"></div>
 		<div id="donut_chart_2" style="width: 100%; height: 50%;"></div>
 		<div id="line_chart" style="width: 100%; height: 50%;"></div>
-		<div data-role="footer" id='custom_footer' data-position="fixed">
+		<div data-role="footer" id='custom_footer' data-position="fixed" data-tap-toggle="false">
 			<div data-role="navbar" id="custom_navbar" data-position="fixed">
 				<ul>
 					<li>
@@ -231,6 +231,27 @@
 	<div id="dinning" data-role="page">
 		<div data-role="header" id="custom_header" data-position="fixed">
 			<h1>Restaurants</h1>
+		</div>
+		<div data-role="footer" id='custom_footer' data-position="fixed" data-tap-toggle="false">
+			<div data-role="navbar" id="custom_navbar" data-position="fixed">
+				<ul>
+					<li>
+						<a href="#home" data-icon="home" data-transition="none">Home</a>
+					</li>
+					<li>
+						<a href="#spending" data-icon="usd" data-transition="none">Spending</a>
+					</li>
+					<li>
+						<a href="#select" id="navbar_newentry" data-rel="popup" data-position-to="window" data-transition="none" data-icon="edit">New Entry</a>
+					</li>
+					<li>
+						<a href="#dinning" data-icon="coffee" data-transition="none" class="ui-btn-active ui-state-persist">Restaurants</a>
+					</li>
+					<li>
+						<a href="#settings" data-icon="wrench" data-transition="none">Settings</a>
+					</li>
+				</ul>
+			</div>
 		</div>
 		<form>
 			<div class="container">
@@ -314,38 +335,18 @@
 				</div>
 			</div>
 		</form>
-		<div data-role="footer" id='custom_footer' data-position="fixed">
-			<div data-role="navbar" id="custom_navbar" data-position="fixed">
-				<ul>
-					<li>
-						<a href="#home" data-icon="home" data-transition="none">Home</a>
-					</li>
-					<li>
-						<a href="#spending" data-icon="usd" data-transition="none">Spending</a>
-					</li>
-					<li>
-						<a href="#select" id="navbar_newentry" data-rel="popup" data-position-to="window" data-transition="none" data-icon="edit">New Entry</a>
-					</li>
-					<li>
-						<a href="#dinning" data-icon="coffee" data-transition="none" class="ui-btn-active ui-state-persist">Restaurants</a>
-					</li>
-					<li>
-						<a href="#settings" data-icon="wrench" data-transition="none">Settings</a>
-					</li>
-				</ul>
-			</div>
-		</div>
+		
 	</div>
 
 	<!-- Restaurant-Joyyee page -->
 	<div id="Joyyee" data-role="page"> 
 			<div data-role="header" id="custom_header" data-position="fixed">	 
-				<h1></h1>
+				<h1>Details</h1>
 				<a href="#dinning" data-icon="chevron-circle-left" class="header-back-home-button" data-iconpos="notext">Home</a>
 			</div>
 			<form>
 			<div class="container">
-				<div>
+				<div id="restaurant_details_Joyyee">
 					<p class="pagetext">Joyyee Noodles</p>
 					<i class="fa fa-star" style="color:#f1c40f"></i>
 					<i class="fa fa-star" style="color:#f1c40f"></i>
@@ -358,9 +359,9 @@
 					<i class="fa fa-at" style="visibility: hidden"></i>  
 					<i class="fa fa-gittip" style="color:red"></i>
 					<i class="fa fa-gittip" style="color:red"></i>
-					<p>Address: 519 Davis St (500m) </p>
-					<p>Phone: (847) 733-1900</p>
-					<p>Style: Asian</p>
+					<p>519 Davis St (500m) </p>
+					<p>(847) 733-1900</p>
+					<p>Asian</p>
 					<img src="prototype_images/Joyyee.jpg" class="Restaurant_Image">
 					<div class="Favouritebutton"><i class="fa fa-heart-o" style="color:red"></i></div>
 				</div>
@@ -415,7 +416,7 @@
 	<!-- Restaurant-Nafnaf page -->
 	<div id="Nafnaf" data-role="page"> 
 			<div data-role="header" id="custom_header" data-position="fixed">	 
-				<h1></h1>
+				<h1>Details</h1>
 				<a href="#dinning" data-icon="chevron-circle-left" class="header-back-home-button" data-iconpos="notext">Home</a>
 			</div>
 			<form>
@@ -433,9 +434,9 @@
 					<i class="fa fa-gittip" style="color:red"></i>
 					<i class="fa fa-gittip" style="color:red"></i>
 					<i class="fa fa-gittip" style="color:red"></i>					
-					<p>Address: 1629 Orrington Ave (100m) </p>
-					<p>Phone: (847) 866-8470</p>
-					<p>Style: Middle Eastern</p>
+					<p>1629 Orrington Ave (100m) </p>
+					<p>(847) 866-8470</p>
+					<p>Middle Eastern</p>
 					<img src="prototype_images/Nafnaf.jpg" class="Restaurant_Image">
 					<div class="Favouritebutton"><i class="fa fa-heart-o" style="color:red"></i></div>
 				</div>
@@ -490,13 +491,13 @@
 	<!-- Restaurant-LYFE page -->
 	<div id="LYFE" data-role="page"> 
 			<div data-role="header" id="custom_header" data-position="fixed">	 
-				<h1></h1>
+				<h1>Details</h1>
 				<a href="#dinning" data-icon="chevron-circle-left" class="header-back-home-button" data-iconpos="notext">Home</a>
 			</div>
 			<form>
 			<div class="container">
 				<div>
-					<p class="pagetext">LYFE</p>
+					<p class="pagetext">LYFE Kitchen</p>
 					<i class="fa fa-star" style="color:#f1c40f"></i>
 					<i class="fa fa-star" style="color:#f1c40f"></i>
 					<i class="fa fa-star" style="color:#f1c40f"></i> 
@@ -508,9 +509,9 @@
 					<i class="fa fa-gittip" style="color:red"></i>
 					<i class="fa fa-gittip" style="color:red"></i>
 					<i class="fa fa-gittip" style="color:red"></i>					
-					<p>Address: 1603 Orrington Ave (150m) </p>
-					<p>Phone: (847) 563-8242</p>
-					<p>Style: Healthy Food</p>
+					<p>1603 Orrington Ave (150m) </p>
+					<p>(847) 563-8242</p>
+					<p>Healthy Food/ Organic</p>
 					<img src="prototype_images/LYFE.jpg" class="Restaurant_Image">
 					<div class="Favouritebutton"><i class="fa fa-heart-o" style="color:red"></i></div>
 				</div>
@@ -568,7 +569,7 @@
 			<h1>Settings</h1>
 		</div>
 		<a href="#login">back to login (for testing)</a>
-		<div data-role="footer" id='custom_footer' data-position="fixed">
+		<div data-role="footer" id='custom_footer' data-position="fixed" data-tap-toggle="false">
 			<div data-role="navbar" id="custom_navbar" data-position="fixed">
 				<ul>
 					<li>

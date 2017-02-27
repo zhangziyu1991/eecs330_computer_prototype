@@ -289,3 +289,20 @@ div.ui-checkbox{ /* style the checkbox on main login page */
 #navbar_newentry{ /*customize the newentry button in navbar*/
 	background-color: rgb(180,180,180);
 } 
+
+th.google-visualization-table-th.gradient.unsorted{
+	text-align: left;
+	width:33%;
+}
+
+td.google-visualization-table-type-number.google-visualization-table-td{
+	text-align: left;
+}
+
+a.ui-collapsible-heading-toggle{
+	background-color: lightgrey !important;  
+}
+
+#restaurant_details_Joyyee{
+	background-color: lightgrey;
+}
