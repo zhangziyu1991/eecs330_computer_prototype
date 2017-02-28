@@ -9,7 +9,7 @@
 	color:white;
 	font-weight: bold;
 	height: 3.5rem;
-	font-size: 1.4rem;
+	font-size: 1.3rem;
 	padding-top: 0.3rem;
 	padding-bottom:0.5rem;
 }
@@ -250,6 +250,7 @@ div.ui-checkbox{ /* style the checkbox on main login page */
 	height: 0.1rem;
 	font-size:1.2rem;
 	border-radius: 0.8rem;
+
 }
 #login_submit a p, #register_submit a p, #back_to_login a p, #reset_password_submit a p{ /* style the submit buttons of main login, register, reset password and confirm popups */
 	position:relative;
@@ -277,7 +278,7 @@ div.ui-checkbox{ /* style the checkbox on main login page */
     background-position: center;
     background-color: red;
     left:1.4rem;
-    top:2rem;
+    top:2.3rem;
 }
 
 .header-back-home-button.ui-link:after { /* style the back home button in headers, scale the icon in the button */
@@ -305,4 +306,14 @@ a.ui-collapsible-heading-toggle{
 
 #restaurant_details_Joyyee{
 	background-color: lightgrey;
+}
+
+#buttons_settings{
+	width: 90%;
+	margin-left: 5%;
+}
+
+#buttons_settings a{
+	font-size: 1.3rem !important;
+	border-radius: 0.8rem;
 }
