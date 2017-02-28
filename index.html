@@ -230,7 +230,7 @@
 
 
 
-	<!-- restaurants page -->
+<!-- restaurants page -->
 	<div id="dinning" data-role="page">
 		<div data-role="header" id="custom_header" data-position="fixed">
 			<h1>Restaurants</h1>
@@ -266,14 +266,20 @@
 					<div class="pagetext">Rank by: </div>
 					<div id="FilterContainer">
 	   					<select id="Filters">
-      						<option>Ratings (Descending)</option>
-      						<option>Price (Descending)</option>
-      						<option>Price (Ascending)</option>
-      						<option>Healthiness (Descending)</option>
-      						<option>Healthiness (Ascending)</option>
+      						<option value="1">Ratings (Descending)</option>
+      						<option value="2">Price (Descending)</option>
+      						<option value="3">Price (Ascending)</option>
+      						<option value="4">Healthiness (Descending)</option>
+      						<option value="5">Healthiness (Ascending)</option>
     					</select>
 					</div>
 				</div>
+
+				<div id="respage_placeholder1"></div>
+				<div id="respage_placeholder2"></div>
+				<div id="respage_placeholder3"></div>
+
+
 				<!--First Restaurant-->
 				<a href="#Joyyee">
 				<div>
@@ -292,6 +298,7 @@
 					<p class="restaurantdetails">519 Davis Street (500m)</p>
 					<p class="restaurantdetails">Asian / Milk Tea</p>
 					<img src="prototype_images/Joyyee.jpg" class="Restaurant_Image">
+					<p id="Bookmarked_respage_Joyyee">This Restaurant is Bookmarked!</p>
 				</div>
 				</a>
 				<br>
@@ -314,6 +321,7 @@
 					<p class="restaurantdetails">1629 Orrington Avenue (100m)</p>
 					<p class="restaurantdetails">Middle Eastern / Fast Food</p>
 					<img src="prototype_images/Nafnaf.jpg" class="Restaurant_Image">
+					<p id="Bookmarked_respage_Nafnaf">This Restaurant is Bookmarked!</p>
 				</div>
 				</a>
 				<br>
@@ -337,6 +345,7 @@
 					<p class="restaurantdetails">1603 Orrington Avenue (150m)</p>
 					<p class="restaurantdetails">Healthy Food / Organic</p>
 					<img src="prototype_images/LYFE.jpg" class="Restaurant_Image">
+					<p id="Bookmarked_respage_LYFE">This Restaurant is Bookmarked!</p>
 				</div>
 				</a>
 			</div>
@@ -369,7 +378,8 @@
 					<p>(847) 733-1900</p>
 					<p>Asian / Milk Tea</p>
 					<img src="prototype_images/Joyyee.jpg" class="Restaurant_Image">
-					<div class="Favouritebutton"><i class="fa fa-bookmark-o" style="color:red"></i></div>
+					<div class="Favouritebutton"><i class="fa fa-bookmark-o" id="Favouritebutton_Joyyee" style="color:red"></i></div>
+					<div class="Bookmarked" id="Bookmarked_Joyyee"><p>Bookmarked</p></div>
 					<p>-------------------------------------------------------</p>
 				</div>
 				<p class="pagetext">Popular Items:</p>
@@ -447,7 +457,8 @@
 					<p>(847) 866-8470</p>
 					<p>Middle Eastern / Fast Food</p>
 					<img src="prototype_images/Nafnaf.jpg" class="Restaurant_Image">
-					<div class="Favouritebutton"><i class="fa fa-bookmark-o" style="color:red"></i></div>
+					<div class="Favouritebutton"><i class="fa fa-bookmark-o" style="color:red" id="Favouritebutton_Nafnaf"></i></div>
+					<div class="Bookmarked" id="Bookmarked_Nafnaf"><p>Bookmarked</p></div>
 					<p>-------------------------------------------------------</p>
 				</div>
 				<p class="pagetext">Popular Items:</p>
@@ -526,7 +537,8 @@
 					<p>(847) 563-8242</p>
 					<p>Healthy Food / Organic</p>
 					<img src="prototype_images/LYFE.jpg" class="Restaurant_Image">
-					<div class="Favouritebutton"><i class="fa fa-bookmark-o" style="color:red"></i></div>
+					<div class="Favouritebutton"><i class="fa fa-bookmark-o" style="color:red" id="Favouritebutton_LYFE"></i></div>
+					<div class="Bookmarked" id="Bookmarked_LYFE"><p>Bookmarked</p></div>
 					<p>-------------------------------------------------------</p>
 				</div>
 				<p class="pagetext">Popular Items:</p>
@@ -576,7 +588,7 @@
 				</div>										
 			</div>		
 			</form>
-	</div>		
+	</div>				
 
 	<!-- settings page -->
 	<div id="settings" data-role="page">
