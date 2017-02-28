@@ -120,8 +120,79 @@ $(document).ready(function(){
 	});	
 
 	$( "#Filters" ).selectmenu();
-	// });	
+	
+    	$("#Favouritebutton_Joyyee").click(function(){
+    	if ($("#Favouritebutton_Joyyee").attr("class") == "fa fa-bookmark-o") {
+        	$("#Favouritebutton_Joyyee").attr("class", "fa fa-bookmark");
+        	$("#Bookmarked_Joyyee").show();
+        	$("#Bookmarked_respage_Joyyee").show();
+    	}
+    	else {
+    		$("#Favouritebutton_Joyyee").attr("class", "fa fa-bookmark-o");
+    		$("#Bookmarked_Joyyee").hide();
+    		$("#Bookmarked_respage_Joyyee").hide();
+    	}
+    });
+
+
+    	$("#Favouritebutton_Nafnaf").click(function(){
+    	if ($("#Favouritebutton_Nafnaf").attr("class") == "fa fa-bookmark-o") {
+        	$("#Favouritebutton_Nafnaf").attr("class", "fa fa-bookmark");
+        	$("#Bookmarked_Nafnaf").show();
+        	$("#Bookmarked_respage_Nafnaf").show();
+    	}
+    	else {
+    		$("#Favouritebutton_Nafnaf").attr("class", "fa fa-bookmark-o");
+    		$("#Bookmarked_Nafnaf").hide();
+    		$("#Bookmarked_respage_Nafnaf").hide();
+    	}
+    });
+
+
+    	$("#Favouritebutton_LYFE").click(function(){
+    	if ($("#Favouritebutton_LYFE").attr("class") == "fa fa-bookmark-o") {
+        	$("#Favouritebutton_LYFE").attr("class", "fa fa-bookmark");
+        	$("#Bookmarked_LYFE").show();
+        	$("#Bookmarked_respage_LYFE").show();
+    	}
+    	else {
+    		$("#Favouritebutton_LYFE").attr("class", "fa fa-bookmark-o");
+    		$("#Bookmarked_LYFE").hide();
+    		$("#Bookmarked_respage_LYFE").hide();
+    	}
+    });
+
+
+    	$('#Filters').change(function() {
+    	if ($("#Filters").val() == 2) //Ratings (Descending)
+     	{
+     		$("#respage_placeholder1").html(Joyyee);
+     	}
+	});
+	
 });
+
+
+var Joyyee = 	'<a href="#Joyyee">' +
+				'<div>' + 
+				'<p class="restaurantname">Joyyee Noodles</p>' +
+				'<i class="fa fa-star" style="color:#f1c40f"></i>' +
+				'<i class="fa fa-star" style="color:#f1c40f"></i>' +
+				'<i class="fa fa-star" style="color:#f1c40f"></i>' +
+				'<i class="fa fa-star" style="color:#f1c40f"></i> ' +
+				'<i class="fa fa-at" style="visibility: hidden"></i> ' + 
+				'<i class="fa fa-dollar" style="color:black"></i>' +
+				'<i class="fa fa-dollar" style="color:black"></i>' +
+				'<i class="fa fa-dollar" style="color:black"></i>' +
+				'<i class="fa fa-at" style="visibility: hidden"></i>' +  
+				'<i class="fa fa-heart" style="color:red"></i>' +
+				'<i class="fa fa-heart" style="color:red"></i>' +
+				'<p class="restaurantdetails">519 Davis Street (500m)</p>' +
+				'<p class="restaurantdetails">Asian / Milk Tea</p>' +
+				'<img src="prototype_images/Joyyee.jpg" class="Restaurant_Image">' +
+				'<p id="Bookmarked_respage_Joyyee">This Restaurant is Bookmarked!</p>' +
+				'</div>' +
+				'</a>';
 
 
 /* initialzation needed for select popup page */
