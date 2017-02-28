@@ -324,6 +324,21 @@ a.ui-link:visited {
 .restaurantdetails{
 	font-weight: normal;
 }
+.Bookmarked {
+	color:red;
+	float: right;
+	margin-top:-10rem;
+	margin-right:1.4rem;
+}
+
+#Bookmarked_Nafnaf, #Bookmarked_LYFE, #Bookmarked_Joyyee {
+	display: none;
+}
+
+#Bookmarked_respage_Joyyee, #Bookmarked_respage_Nafnaf, #Bookmarked_respage_LYFE{
+	color: red;
+	display: none;
+}
 
 #buttons_settings{
 	width: 93%;
