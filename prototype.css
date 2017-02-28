@@ -304,8 +304,25 @@ a.ui-collapsible-heading-toggle{
 	background-color: lightgrey !important;  
 }
 
-#restaurant_details_Joyyee{
-	background-color: lightgrey;
+a.ui-link:link {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: auto;
+}
+
+a.ui-link:visited {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: auto;
+}
+
+.restaurantname{
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+.restaurantdetails{
+	font-weight: normal;
 }
 
 #buttons_settings{
