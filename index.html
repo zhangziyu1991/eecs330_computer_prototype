@@ -207,11 +207,18 @@
 			<h1>Spending</h1>
 		</div>
 
-		<form>
-			<div id="donut_chart"></div>
-			<div id="donut_chart_2"></div>
-			<div id="line_chart"></div>
-		</form>
+		<div id="PeriodSelectorContainer">
+	   		<select id="PeriodSelector">
+      			<option value="1">Past 3 Days</option>
+      			<option value="2">Past Week</option>
+      			<option value="3">Past Month</option>
+      			<option value="4">Past 3 Months</option>
+    		</select>
+		</div>
+
+		<div id="donut_chart"></div>
+		<div id="donut_chart_2"></div>
+		<div id="line_chart"></div>
 		
 		<div data-role="footer" id='custom_footer' data-position="fixed" data-tap-toggle="false">
 			<div data-role="navbar" id="custom_navbar" data-position="fixed">
