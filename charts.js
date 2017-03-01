@@ -8,6 +8,9 @@ function drawChart() {
 		['Subway @ Norris University Center', 	4],
 		["Giordano's", 							3],
 		["LYFE Kitchen", 						8]]);
+
+	// var chartWidth = $('#ziyu').width();
+
 	var options = {
 		title: 'Dining Locations - Total: 34 Visits',
 		fontSize: 12,
@@ -20,9 +23,8 @@ function drawChart() {
 		// vAxis: {
 		// 	title: 'Location'
 		// }
-		// width: '100%',
+		// width: chartwidth,
 		// height: '100%'
-
 	};
 	var chart = new google.visualization.BarChart(document.getElementById('donut_chart'));
 	chart.draw(data, options);
@@ -31,7 +33,7 @@ function drawChart() {
 google.charts.setOnLoadCallback(drawChart2);
 function drawChart2() {
 	var data = google.visualization.arrayToDataTable([
-		['Expenditure', 						'U.S. Dollars'],
+		['Expenditure', 						'$'],
 		['at home',  							178.88],
 		['527 Cafe',							68.12],
 		['Subway @ Norris University Center', 	120.48],
@@ -49,8 +51,8 @@ function drawChart2() {
 		// vAxis: {
 		// 	title: 'Location'
 		// }
-		// width: '100%',
-		// height: '100%'
+		// width:  800,
+		// height: 200
 	};
 	var chart = new google.visualization.BarChart(document.getElementById('donut_chart_2'));
 	chart.draw(data, options);
@@ -71,7 +73,7 @@ function drawChart3() {
 		legend: {position: 'none'},
 		fontSize: 12,
 		// width: '100%',
-		// height: '50%'
+		// height: '100%'
 	};
 	var chart = new google.visualization.LineChart(document.getElementById('line_chart'));
 	chart.draw(data, options);
