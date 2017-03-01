@@ -33,7 +33,7 @@ function drawChart2() {
 	var data = google.visualization.arrayToDataTable([
 		['Expenditure', 						'U.S. Dollars'],
 		['at home',  							178.88],
-		['527 Caffe',							68.12],
+		['527 Cafe',							68.12],
 		['Subway @ Norris University Center', 	120.48],
 		["Giordano's", 							56.43],
 		["LYFE Kitchen", 						116.72]]);
@@ -118,5 +118,25 @@ function drawTable2() {
 		height: '100%'
 	}
 	var table = new google.visualization.Table(document.getElementById('table_chart_2'));
+	table.draw(data, options);
+}
+
+google.charts.setOnLoadCallback(drawTable3);
+function drawTable3() {
+	var data = new google.visualization.DataTable();
+	data.addColumn('string', 'Restaurant');
+	data.addColumn('number', 'Visits');
+	data.addColumn('string', 'Fav. Dish');
+	data.addRows([
+		['527 Cafe',		14,			'Beef Noodles, Egg Fried Rice'],
+		['LYFE Kitchen',	12,			'Green Salad, Tuna Sandwich'],
+		["Giordano's",		7,			'Sausage Pizza, Chipotle Chicken Wings']
+		]);
+	var options = {
+		showRowNumber: false,
+		width: '100%',
+		height: '100%'
+	}
+	var table = new google.visualization.Table(document.getElementById('table_chart_3'));
 	table.draw(data, options);
 }
