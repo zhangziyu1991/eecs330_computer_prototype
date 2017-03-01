@@ -92,6 +92,12 @@ a.ui-link.ui-btn.ui-icon-dribble.ui-btn-icon-top, a.ui-link.ui-btn.ui-icon-cutle
     height: 20%;
 }
 
+#PeriodSelector-button.ui-btn:after {
+    ms-transform: scale(1); /* IE 9 */
+    -webkit-transform: scale(1); /* Chrome, Safari, Opera */
+    transform: scale(1);
+} 
+
 /*****************  Ziyu's Code End  *****************/
 
 /***************** JW's Code Start *****************/
@@ -192,6 +198,7 @@ img.backimage {
     -webkit-transform: scale(1); /* Chrome, Safari, Opera */
     transform: scale(1);
 } 
+
 
 .Restaurant_Image{
 	width: 5.8rem;
