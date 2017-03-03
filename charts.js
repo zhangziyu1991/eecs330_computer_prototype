@@ -5,7 +5,7 @@ function drawChart() {
 		['Location', 							'Visits'],
 		['at home',  							14],
 		['527 Caffe',							5],
-		['Subway @ Norris University Center', 	4],
+		['Subway', 								4],
 		["Giordano's", 							3],
 		["LYFE Kitchen", 						8]]);
 
@@ -36,7 +36,7 @@ function drawChart2() {
 		['Expenditure', 						'$'],
 		['at home',  							178.88],
 		['527 Cafe',							68.12],
-		['Subway @ Norris University Center', 	120.48],
+		['Subway', 								120.48],
 		["Giordano's", 							56.43],
 		["LYFE Kitchen", 						116.72]]);
 	var options = {
@@ -87,7 +87,7 @@ function drawTable() {
 	data.addColumn('number', 'Cost');
 	data.addRows([
 		['2/17/17 12:01',	'527 Cafe',								{v:9.89, 	f: '$9.89'}],
-		['2/16/17 19:01',  	'Subway @ Norris University Center', 	{v:12.01,   f: '$12.01'}],
+		['2/16/17 19:01',  	'Subway', 								{v:12.01,   f: '$12.01'}],
 		['2/16/17 11:33',  	"Giordano's", 							{v:18.34,   f: '$18.34'}],
 		['2/15/17 18:56', 	'LYFE Kitchen', 						{v:8.43,   	f: '$8.43'}],
 		['2/15/17 11:47', 	'at home', 								{v:4.28,   	f: '$4.28'}]
