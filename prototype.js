@@ -294,3 +294,13 @@ $(document).ready(function(){
  location.reload();
   });
 });
+
+$('div:jqmData(role="page")').on('pageinit',function(){
+    $(document)
+        .on('focus','input, select, textarea', function(){
+            $('[data-role="footer"][data-position="fixed"]').hide();
+        })
+        .on('blur','input, select, textarea',function(){
+            $('[data-role="footer"][data-position="fixed"]').show();
+        });
+});
