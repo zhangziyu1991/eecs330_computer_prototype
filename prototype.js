@@ -164,10 +164,36 @@ $(document).ready(function(){
 
 
     	$('#Filters').change(function() {
-    	if ($("#Filters").val() == 2) //Ratings (Descending)
+    	if ($("#Filters").val() == 1) //Ratings (Descending)
      	{
-     		$("#respage_placeholder1").html(Joyyee);
+     		$("#respage_placeholder1").html(Joyyee).enhanceWithin();
+            $("#respage_placeholder2").html(Nafnaf).enhanceWithin();
+            $("#respage_placeholder3").html(LYFE).enhanceWithin();
      	}
+        if ($("#Filters").val() == 2) //Price (Descending)
+        {
+            $("#respage_placeholder1").html(Joyyee).enhanceWithin();
+            $("#respage_placeholder2").html(LYFE).enhanceWithin();
+            $("#respage_placeholder3").html(Nafnaf).enhanceWithin();
+        }
+        if ($("#Filters").val() == 3) //Price (Ascending)
+        {
+            $("#respage_placeholder1").html(Nafnaf).enhanceWithin();
+            $("#respage_placeholder2").html(LYFE).enhanceWithin();
+            $("#respage_placeholder3").html(Joyyee).enhanceWithin();
+        }
+        if ($("#Filters").val() == 4) //Healthiness (Descending)
+        {
+            $("#respage_placeholder1").html(LYFE).enhanceWithin();
+            $("#respage_placeholder2").html(Nafnaf).enhanceWithin();
+            $("#respage_placeholder3").html(Joyyee).enhanceWithin();
+        }
+        if ($("#Filters").val() == 5) //Healthiness (Ascending)
+        {
+            $("#respage_placeholder1").html(Joyyee).enhanceWithin();
+            $("#respage_placeholder2").html(Nafnaf).enhanceWithin();
+            $("#respage_placeholder3").html(LYFE).enhanceWithin();
+        }
 	});
 	
 });
@@ -192,7 +218,57 @@ var Joyyee = 	'<a href="#Joyyee">' +
 				'<img src="prototype_images/Joyyee.jpg" class="Restaurant_Image">' +
 				'<p id="Bookmarked_respage_Joyyee">This Restaurant is Bookmarked!</p>' +
 				'</div>' +
-				'</a>';
+				'</a>' +
+                '<br>';
+
+
+var Nafnaf =    '<a href="#Nafnaf">' +
+                '<div>' +
+                   ' <p class="restaurantname">Naf Naf Grill</p>' +
+                    '<i class="fa fa-star" style="color:#f1c40f"></i>' +
+                    '<i class="fa fa-star" style="color:#f1c40f"></i>' +
+                    '<i class="fa fa-star" style="color:#f1c40f"></i>' +
+                    '<i class="fa fa-star" style="color:#f1c40f"></i> ' +
+                    '<i class="fa fa-at" style="visibility: hidden"></i> ' + 
+                    '<i class="fa fa-dollar" style="color:black"></i>' +
+                    '<i class="fa fa-dollar" style="color:black"></i>' +
+                    '<i class="fa fa-dollar" style="visibility: hidden"></i>' +
+                    '<i class="fa fa-at" style="visibility: hidden"></i>  ' +
+                    '<i class="fa fa-heart" style="color:red"></i>' +
+                    '<i class="fa fa-heart" style="color:red"></i>' +
+                    '<i class="fa fa-heart" style="color:red"></i>' +
+                    '<p class="restaurantdetails">1629 Orrington Avenue (100m)</p>' +
+                    '<p class="restaurantdetails">Middle Eastern / Fast Food</p>' +
+                    '<img src="prototype_images/Nafnaf.jpg" class="Restaurant_Image">' +
+                    '<p id="Bookmarked_respage_Nafnaf">This Restaurant is Bookmarked!</p>' +
+                '</div>' +
+                '</a>' +
+                '<br>';
+
+var LYFE =      '<a href="#LYFE">' +
+                '<div>' +
+                 '   <p class="restaurantname">LYFE Kitchen</p>' +
+                    '<i class="fa fa-star" style="color:#f1c40f"></i>' +
+                    '<i class="fa fa-star" style="color:#f1c40f"></i>' +
+                    '<i class="fa fa-star" style="color:#f1c40f"></i>' +
+                    '<i class="fa fa-star" style="visibility: hidden"></i>' +
+                    '<i class="fa fa-at" style="visibility: hidden"></i>  ' +
+                    '<i class="fa fa-dollar" style="color:black"></i>' +
+                    '<i class="fa fa-dollar" style="color:black"></i>' +
+                    '<i class="fa fa-dollar" style="color:black"></i>' +
+                    '<i class="fa fa-dollar" style="visibility: hidden"></i>' +
+                    '<i class="fa fa-at" style="visibility: hidden"></i>  ' +
+                    '<i class="fa fa-heart" style="color:red"></i>' +
+                    '<i class="fa fa-heart" style="color:red"></i>' +
+                    '<i class="fa fa-heart" style="color:red"></i>' +
+                    '<i class="fa fa-heart" style="color:red"></i>' +
+                    '<p class="restaurantdetails">1603 Orrington Avenue (150m)</p>' +
+                    '<p class="restaurantdetails">Healthy Food / Organic</p>' +
+                    '<img src="prototype_images/LYFE.jpg" class="Restaurant_Image">' +
+                    '<p id="Bookmarked_respage_LYFE">This Restaurant is Bookmarked!</p>' +
+                '</div>' +
+                '</a>' +
+                '<br>';
 
 
 /* initialzation needed for select popup page */
