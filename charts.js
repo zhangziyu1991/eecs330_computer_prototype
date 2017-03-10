@@ -130,9 +130,9 @@ function drawTable3() {
 	data.addColumn('number', 'Visits');
 	data.addColumn('string', 'Fav. Dish');
 	data.addRows([
-		['527 Cafe',		14,			'Beef Noodles, Egg Fried Rice'],
-		['LYFE Kitchen',	12,			'Green Salad, Tuna Sandwich'],
-		["Giordano's",		7,			'Sausage Pizza, Chipotle Chicken Wings']
+		['527 Cafe',		14,			'Beef Noodles'],
+		['LYFE Kitchen',	12,			'Tuna Sandwich'],
+		["Giordano's",		7,			'Sausage Pizza']
 		]);
 	var options = {
 		showRowNumber: false,
