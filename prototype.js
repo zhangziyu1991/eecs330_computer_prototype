@@ -4,7 +4,6 @@ var endtimesec = -1;
 var starttime = '12:00am';
 var CurrentList = 1;
 var CurrentTimeRaw = new Date();
-var filterValue = 1;
 
 function checkTime(i){  /*Helper function to correctly display current time*/
 	if (i<10) {i="0"+i;}
@@ -163,9 +162,14 @@ $(document).ready(function(){
     	}
     });
 
-
-    	$('#Filters').change(function() {
-    	if ($("#Filters").val() == 1 || filterValue == 1) //Ratings (Descending)
+    	$('#Filters').ready(function(){
+            $("#respage_placeholder1").html(Joyyee).enhanceWithin();
+            $("#respage_placeholder2").html(Nafnaf).enhanceWithin();
+            $("#respage_placeholder3").html(LYFE).enhanceWithin();
+        });
+        
+        $('#Filters').change(function() {
+    	if ($("#Filters").val() == 1) //Ratings (Descending)
      	{
      		$("#respage_placeholder1").html(Joyyee).enhanceWithin();
             $("#respage_placeholder2").html(Nafnaf).enhanceWithin();
@@ -176,28 +180,24 @@ $(document).ready(function(){
             $("#respage_placeholder1").html(Joyyee).enhanceWithin();
             $("#respage_placeholder2").html(LYFE).enhanceWithin();
             $("#respage_placeholder3").html(Nafnaf).enhanceWithin();
-		filter Value = 2;
         }
         if ($("#Filters").val() == 3) //Price (Ascending)
         {
             $("#respage_placeholder1").html(Nafnaf).enhanceWithin();
             $("#respage_placeholder2").html(LYFE).enhanceWithin();
             $("#respage_placeholder3").html(Joyyee).enhanceWithin();
-		filter Value = 3;
         }
         if ($("#Filters").val() == 4) //Healthiness (Descending)
         {
             $("#respage_placeholder1").html(LYFE).enhanceWithin();
             $("#respage_placeholder2").html(Nafnaf).enhanceWithin();
             $("#respage_placeholder3").html(Joyyee).enhanceWithin();
-		filter Value = 4;
         }
         if ($("#Filters").val() == 5) //Healthiness (Ascending)
         {
             $("#respage_placeholder1").html(Joyyee).enhanceWithin();
             $("#respage_placeholder2").html(Nafnaf).enhanceWithin();
             $("#respage_placeholder3").html(LYFE).enhanceWithin();
-		filter Value = 5;
         }
 	});
 	
